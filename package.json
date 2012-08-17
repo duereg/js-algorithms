@@ -1,0 +1,9 @@
+{
+  "name": "js-algorithms",
+  "description": "Javascript versions of classic software development algorithms",
+  "version": "0.0.0", 
+  "dependencies": { 
+    "jasmine-node": "*"
+  },
+  "private": true
+}
