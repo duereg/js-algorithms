@@ -12,9 +12,9 @@ describe('When adding ten elements to the min heap', function () {
 		list.add(-10);
 		list.add(90);
 		list.add(70);
-		list.add(69);
-		list.add(68);
-		list.add(67);
+		list.add(40);
+		list.add(50);
+		list.add(60);
 
 		console.log(list.array);
 	});
@@ -34,4 +34,10 @@ describe('When adding ten elements to the min heap', function () {
 	it('and you remove the head, it should be the smallest element.', function () {   
 		expect(list.removeHead()).toBe(-10);
 	});    
+
+	it('and you remove the head twice, you should get the two smallest elements.', function () {   
+		expect(list.removeHead()).toBe(-10);
+		console.log(list.array);
+		expect(list.removeHead()).toBe(10);
+	});  
 });

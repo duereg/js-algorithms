@@ -12,9 +12,9 @@ describe('When adding ten elements to the max heap', function () {
 		list.add(-10);
 		list.add(90);
 		list.add(70);
-		list.add(69);
-		list.add(68);
-		list.add(67);
+		list.add(40);
+		list.add(50);
+		list.add(60);
 
 		console.log(list.array);
 	});
@@ -33,5 +33,11 @@ describe('When adding ten elements to the max heap', function () {
 
 	it('and you remove the head, it should be the largest element.', function () {   
 		expect(list.removeHead()).toBe(100);
+	}); 
+
+	it('and you remove the head twice, you should get the two largest elements.', function () {   
+		expect(list.removeHead()).toBe(100);
+		console.log(list.array);
+		expect(list.removeHead()).toBe(90);
 	});    
 });

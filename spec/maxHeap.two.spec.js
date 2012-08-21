@@ -6,9 +6,7 @@ describe('When adding two elements to the max heap', function () {
 	beforeEach(function() {		
 		list = new maxHeap();
 		list.add(20);
-		list.add(10);
-
-		console.log(list.array);
+		list.add(10); 
 	});
 
 	afterEach(function() {
