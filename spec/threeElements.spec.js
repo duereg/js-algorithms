@@ -1,6 +1,6 @@
 var LinkedList = require("../lib/linkedList.js"); 
 
-describe('When adding three elements', function () {
+describe('When adding three elements to a linked list', function () {
 	var list;
 	var testValue1 = "test_string1"
 	var testValue2 = "test_string2"
@@ -40,7 +40,7 @@ describe('When adding three elements', function () {
 	});
 });
 
-describe('When adding three elements and then removing the 1st element', function () {
+describe('When adding three elements to a linked list and then removing the 1st element', function () {
 	var list;
 	var testValue1 = "test_string1"
 	var testValue2 = "test_string2"
@@ -80,7 +80,7 @@ describe('When adding three elements and then removing the 1st element', functio
 	});
 });
 
-describe('When adding three elements and then removing the 2nd element', function () {
+describe('When adding three elements to a linked list and then removing the 2nd element', function () {
 	var list;	
 	var testValue1 = "test_string1"
 	var testValue2 = "test_string2"
@@ -122,7 +122,7 @@ describe('When adding three elements and then removing the 2nd element', functio
 });
 
 
-describe('When adding three elements and then removing the 3rd element', function () {
+describe('When adding three elements to a linked list and then removing the 3rd element', function () {
 	var list;	
 	var testValue1 = "test_string1"
 	var testValue2 = "test_string2"
