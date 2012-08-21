@@ -14,9 +14,7 @@ describe('When adding ten elements to the max heap', function () {
 		list.add(70);
 		list.add(40);
 		list.add(50);
-		list.add(60);
-
-		console.log(list.array);
+		list.add(60); 
 	});
 
 	afterEach(function() {
@@ -40,4 +38,6 @@ describe('When adding ten elements to the max heap', function () {
 		console.log(list.array);
 		expect(list.removeHead()).toBe(90);
 	});    
+
+	//todo: add check to actually walk tree and check all relationships
 });
