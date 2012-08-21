@@ -1,6 +1,6 @@
 var LinkedList = require("../lib/linkedList.js"); 
 
-describe('When adding one element', function () {
+describe('When adding one element to a linked list', function () {
 	var list;
 	var testValue = "test_string"
 
