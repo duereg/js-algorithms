@@ -1,4 +1,5 @@
 var maxHeap = require("../lib/maxHeap.js"); 
+var heapValidator = require("./binaryHeap.Validator.js"); 
 
 describe('When adding ten elements to the max heap via constructor', function () {
 	var list;
@@ -40,6 +41,11 @@ describe('When adding ten elements to the max heap via constructor', function ()
 		console.log(list.array);
 		expect(list.removeHead()).toBe(90);
 	});    
+
+	it('the max heap is valid', function() {
+		var validator = new heapValidator(list);
+		expect(validator.isValid()).toBe(true);
+	});
 
 	//todo: add check to actually walk tree and check all relationships
 });
