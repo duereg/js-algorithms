@@ -1,4 +1,5 @@
 var minHeap = require("../lib/minHeap.js"); 
+var heapValidator = require("./binaryHeap.Validator.js"); 
 
 describe('When adding ten elements to the min heap via constructor', function () {
 	var list;
@@ -39,7 +40,12 @@ describe('When adding ten elements to the min heap via constructor', function ()
 		expect(list.removeHead()).toBe(-10);
 		console.log(list.array);
 		expect(list.removeHead()).toBe(10);
-	});  
+	});   
+
+	it('the min heap is valid', function() {
+		var validator = new heapValidator(list);
+		expect(validator.isValid()).toBe(true);
+	});
 
 	//todo: add check to actually walk tree and check all relationships
 });
