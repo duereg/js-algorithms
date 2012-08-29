@@ -1,6 +1,6 @@
 var trie = require("../lib/trie.js"); 
 
-describe('After adding the word "Philadelphia" to the trie', function () {
+describe('Given a trie containing the word "Philadelphia"', function () {
 	var tree;
 	var testValue = "Philadelphia"
 
@@ -26,7 +26,7 @@ describe('After adding the word "Philadelphia" to the trie', function () {
 	});
 });
 
-describe('After adding the words "Philadelphia" and "Phil" to the trie', function () {
+describe('Given a trie containing the words "Philadelphia" and "Phil"', function () {
 	var tree;
 	var testValue = "Philadelphia"
 	var testValue2 = "Phil";
@@ -58,7 +58,52 @@ describe('After adding the words "Philadelphia" and "Phil" to the trie', functio
 	});
 });
 
-describe('After adding the words "apple", "banana", and "orange" to the trie', function () {
+describe('Given a trie containing the words "free", "freed", "freedom", and "frees"', function () {
+	var tree;
+	var testValue1 = "free";
+	var testValue2 = "freed";
+	var testValue3 = "frees"; 
+	var testValue5 = "freedom";
+
+	beforeEach(function() {	
+		tree = new trie();
+		tree.add(testValue1);
+		tree.add(testValue2);	
+		tree.add(testValue3);	 
+		tree.add(testValue5);
+	});
+
+	afterEach(function() {
+		tree = null;
+	});
+
+	it('the tree`s head should contain one entry', function () {  
+		//console.log(JSON.stringify(tree.head));
+		expect(Object.keys(tree.head).length).toBe(1);
+	});
+
+	it('the tree`s head should contain the property f.', function () {   
+		expect(tree.head.f).toBeDefined();
+	}); 
+
+	it('the hasWord() method should be able to find ' + testValue1 , function() {
+		expect(tree.hasWord(testValue1)).toBe(true);
+	});
+
+	it('the hasWord() method should be able to find ' + testValue2, function() {
+		expect(tree.hasWord(testValue2)).toBe(true);
+	});
+
+	it('the hasWord() method should be able to find ' + testValue3, function() {
+		expect(tree.hasWord(testValue3)).toBe(true);
+	});
+
+	it('the hasWord() method should be able to find ' + testValue5, function() {
+		expect(tree.hasWord(testValue5)).toBe(true);
+	});
+});
+
+describe('Given a trie containing the words "apple", "banana", and "orange"', function () {
 	var tree;
 	var testValue1 = "apple";
 	var testValue2 = "banana";
