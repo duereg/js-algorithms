@@ -1,4 +1,4 @@
-var minHeap = require("../lib/minHeap.js"); 
+var minHeap = require("../lib/ds/minHeap.js"); 
 var heapValidator = require("./binaryHeap.Validator.js"); 
 
 describe('When adding ten elements to the min heap via constructor', function () {

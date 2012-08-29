@@ -1,4 +1,4 @@
-var minHeap = require("../lib/minHeap.js"); 
+var minHeap = require("../lib/ds/minHeap.js"); 
 
 describe('When adding two elements to the min heap', function () {
 	var list;

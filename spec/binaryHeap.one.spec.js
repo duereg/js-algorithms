@@ -1,4 +1,4 @@
-var binaryHeap = require("../lib/binaryHeap.js"); 
+var binaryHeap = require("../lib/ds/binaryHeap.js"); 
 
 describe('When adding one element to the binary heap', function () {
 	var list;

@@ -1,4 +1,4 @@
-var LinkedList = require("../lib/linkedList.js"); 
+var LinkedList = require("../lib/ds/linkedList.js"); 
 
 describe('When adding one element to a linked list', function () {
 	var list;

@@ -1,4 +1,4 @@
-var trie = require("../lib/trie.js"); 
+var trie = require("../lib/ds/trie.js"); 
 
  
 describe('Given a trie containing the words "free", "freed", "freedom", and "frees"', function() {
