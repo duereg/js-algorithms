@@ -1,4 +1,4 @@
-var isPermutation = require("../../lib/algorithms/chapter1/permutation.js"); 
+var isPermutation = require("../../../lib/algorithms/chapter1/permutation.js"); 
 
 describe('When comparing two strings using isPermutation() ', function () {
 	
