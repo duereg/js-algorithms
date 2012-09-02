@@ -1,4 +1,4 @@
-var maxHeap = require("../lib/ds/maxHeap.js"); 
+var maxHeap = require("../lib/dataStructures/maxHeap.js"); 
 var heapValidator = require("./binaryHeap.Validator.js"); 
 
 describe('When adding ten elements to the max heap', function () {
