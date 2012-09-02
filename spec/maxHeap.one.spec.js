@@ -1,4 +1,4 @@
-var maxHeap = require("../lib/ds/maxHeap.js"); 
+var maxHeap = require("../lib/dataStructures/maxHeap.js"); 
 
 describe('When adding one element to the max heap', function () {
 	var list;

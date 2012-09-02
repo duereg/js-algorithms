@@ -1,4 +1,4 @@
-var escape = require("../../lib/algo/escape.js"); 
+var escape = require("../../lib/algorithms/chapter1/escape.js"); 
 
 describe('When using escape() on a string', function () {
 	

@@ -1,4 +1,4 @@
-var trie = require("../lib/ds/trie.js"); 
+var trie = require("../lib/dataStructures/trie.js"); 
 
 describe('Given a trie containing the word "Philadelphia"', function () {
 	var tree;
