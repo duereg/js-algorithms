@@ -1,10 +1,9 @@
-var deDupe = require("../../../lib/algorithms/chapter2/deDupe.js");
+var deDupe = require("../../../lib/algorithms/chapter2/deDupe.recursive.js");
 var LinkedList = require("../../../lib/dataStructures/linkedList.js"); 
 
-describe('When using deDupe() on an array of integers', function () {
+describe('When using the recursive deDupe() on an array of integers', function () {
 	var containsDupes;
 	var noDupes;
-
 
 	beforeEach(function() {		
 		containsDupes = new LinkedList();
