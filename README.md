@@ -19,3 +19,6 @@ As well as the following algorithms:
 * Binary Search
 * Merge Sort
 * Quick Sort
+
+Various algorithm problems will be solved using the basic algorithms and data structures to 
+showcase how they can be used as well. 
