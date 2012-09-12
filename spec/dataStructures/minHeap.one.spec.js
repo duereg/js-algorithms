@@ -1,4 +1,4 @@
-var minHeap = require("../lib/dataStructures/minHeap.js"); 
+var minHeap = require("../../lib/dataStructures/minHeap.js"); 
 
 describe('When adding one element to the min heap', function () {
 	var list;

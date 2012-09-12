@@ -1,4 +1,4 @@
-var LinkedList = require("../lib/dataStructures/linkedList.js"); 
+var LinkedList = require("../../lib/dataStructures/linkedList.js"); 
 
 describe('When adding two elements to a linked list', function () {
 	var list;
