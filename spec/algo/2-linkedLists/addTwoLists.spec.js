@@ -1,4 +1,4 @@
-var addTwoLists = require("../../../lib/algorithms/chapter2/addTwoLists.js");
+var addTwoLists = require("../../../lib/algorithms/2-linkedLists/addTwoLists.js");
 var LinkedList = require("../../../lib/dataStructures/linkedList.js"); 
 
 describe('When using addTwoLists() on two linked lists', function () {

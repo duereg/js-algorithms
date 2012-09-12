@@ -1,4 +1,4 @@
-var kthToLast = require("../../../lib/algorithms/chapter2/kthToLast.js");
+var kthToLast = require("../../../lib/algorithms/2-linkedLists/kthToLast.js");
 var LinkedList = require("../../../lib/dataStructures/linkedList.js"); 
 
 describe('When using kthToLast() on a linked list with 9 items', function () {
