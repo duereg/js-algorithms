@@ -1,21 +1,23 @@
-var minHeap = require("../lib/dataStructures/minHeap.js"); 
+var minHeap = require("../../lib/dataStructures/minHeap.js"); 
 var heapValidator = require("./binaryHeap.Validator.js"); 
 
-describe('When adding ten elements to the min heap', function () {
+describe('When adding ten elements to the min heap via constructor', function () {
 	var list;
 
 	beforeEach(function() {		
-		list = new minHeap();
-		list.add(20);
-		list.add(10);
-		list.add(100);
-		list.add(30);
-		list.add(-10);
-		list.add(90);
-		list.add(70);
-		list.add(40);
-		list.add(50);
-		list.add(60); 
+		var array = []		
+		array.push(20);
+		array.push(10);
+		array.push(100);
+		array.push(30);
+		array.push(-10);
+		array.push(90);
+		array.push(70);
+		array.push(40);
+		array.push(50);
+		array.push(60); 
+
+		list = new minHeap(array); 
 	});
 
 	afterEach(function() {

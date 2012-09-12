@@ -1,4 +1,4 @@
-var stack = require("../lib/dataStructures/stack.js"); 
+var stack = require("../../lib/dataStructures/stack.js"); 
 
 describe('When pushing two elements to a stack', function () {
 	var myStack;
