@@ -1,4 +1,4 @@
-var compress = require("../../../lib/algorithms/chapter1/compress.js"); 
+var compress = require("../../../lib/algorithms/1-strings/compress.js"); 
 
 describe('When using compress() on a string', function () {
 	
