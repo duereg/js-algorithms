@@ -1,7 +1,7 @@
 js-algorithms
 =============
 
-Javascript versions of classic software development algorithms
+Classic data structures and algorithms written in JavaScript
 
 The goal is to develop (with tests) the following basic data structures:
 
@@ -20,5 +20,7 @@ As well as the following algorithms:
 * Merge Sort
 * Quick Sort
 
-Various algorithm problems will be solved using the basic algorithms and data structures to 
+Various problems will be solved using the basic algorithms and data structures to 
 showcase how they can be used as well. 
+
+The process of creating this code is documentated at http://codetype.wordpress.com 
