@@ -8,7 +8,7 @@ The goal is to develop (with tests) the following basic data structures:
 * Singly Linked List
 * Min/Max Binary Heap
 * Trie (With Pre-Order Traversal Sorting)
-* Stack
+* Stack (push, pop, peek, and isEmpty)
 * Queue
 * Hash Table
 
