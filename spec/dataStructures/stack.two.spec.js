@@ -22,7 +22,7 @@ describe('When pushing two elements to a stack', function () {
 
 });
 
-describe('When pushing two elements to a stack and then removing popping an element', function () {
+describe('When pushing two elements to a stack and then popping an element', function () {
 	var myStack;
 	var testValue1 = "test_string1"
 	var testValue2 = "test_string2"
