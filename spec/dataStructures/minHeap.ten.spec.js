@@ -36,7 +36,7 @@ describe('When adding ten elements to the min heap', function () {
 
 	it('and you remove the head twice, you should get the two smallest elements.', function () {   
 		expect(list.removeHead()).toBe(-10);
-		console.log(list.array);
+		//console.log(list.array);
 		expect(list.removeHead()).toBe(10);
 	});   
 

@@ -31,7 +31,7 @@ describe('When adding three elements to a linked list', function () {
 	});
 
 	it('the start next pointer should be point to the 2nd value node.', function () {  
-	  console.log(list.start.next);
+	    //console.log(list.start.next);
 		expect(list.start.next.data).toBe(testValue2);
 	});
 
