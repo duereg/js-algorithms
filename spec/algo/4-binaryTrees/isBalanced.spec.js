@@ -18,7 +18,6 @@ describe('When testing a binary search tree using isBalanced()', function () {
 		tree.add(value3);
 
 		expect(isBalanced(tree.head)).toBe(true);
-
 	});  
 
 	it('if the elements are added in order (least, middle, greatest) the tree will be unbalanced.', function () {   
