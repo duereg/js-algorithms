@@ -23,8 +23,8 @@ describe('Given an array sorted in ascending order, create a binary search tree'
 		var bst = createBst(array);
 
 		expect(bst).not.toBe(null);
-		expect(bst.data).toBe(9);
-		expect(bst.right.data).toBe(10);
+		expect(bst.data).toBe(10);
+		expect(bst.left.data).toBe(9);
 	});
  
 	it('with a array of size 3', function () {   
