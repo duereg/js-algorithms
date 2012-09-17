@@ -1,3 +1,4 @@
+//TODO: Use binary search tree implementation to test this
 /*var isRoute = require("../../../lib/algorithms/4-binaryTrees/isRoute.js"); 
 var trie = require("../../../lib/dataStructures/trie.js"); 
 
