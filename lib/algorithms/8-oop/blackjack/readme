@@ -1,0 +1,28 @@
+Card
+	HasSuit - Clubs, Diamonds, Hearts, Spades
+	HasValue - 2-10, Jack, Queen, King, Ace
+	IsFaceCard()
+
+Deck
+	52 Cards
+	All Four Suits
+	13 Cards for Each Suit
+	Shuffle()
+	DealCard()
+	CardsLeft()
+
+Hand
+	Has Cards
+	Has Value(s) - Could be maximum possible value
+	IsBusted()
+	IsBlackjack()
+	AddCard(card)
+
+Table
+	Has Hands
+
+Dealer
+	Has Hand
+	Has to take cards until value of hand is 16 or higher
+
+
