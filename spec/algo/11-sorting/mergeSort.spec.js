@@ -6,7 +6,7 @@ describe('When using MergeSort on an unsorted Array', function () {
 	var sortedArray = null;
 
 	beforeEach(function() {
-		var unsortedArray = [10, 8, 1, 3, 5, 7, 6, 9];
+		var unsortedArray = [10, 8, 3, 1, 7, 5, 9, 6];
 		unsortedLength = unsortedArray.length;
 		mergeSort(unsortedArray, 0, unsortedArray.length - 1);
 		sortedArray = unsortedArray;
