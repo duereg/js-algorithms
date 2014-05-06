@@ -78,7 +78,6 @@ describe('Given a trie containing the words "free", "freed", "freedom", and "fre
 	});
 
 	it('the tree`s head should contain one entry', function () {
-		//console.log(JSON.stringify(tree.head));
 		expect(Object.keys(tree.head).length).toBe(1);
 	});
 
