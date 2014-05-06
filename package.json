@@ -1,8 +1,8 @@
 {
   "name": "js-algorithms",
   "description": "Javascript versions of classic software development algorithms",
-  "version": "0.0.0", 
-  "dependencies": { 
+  "version": "0.0.1",
+  "dependencies": {
     "jasmine-node": "*"
   },
   "author": {
@@ -14,8 +14,8 @@
     "node": ">=0.4.0"
   },
   "maintainers": [{
-      "name": "Matt Blair",
-      "email": "matt@mattblair.co",
-      "web": "http://duereg.github.io"
+    "name": "Matt Blair",
+    "email": "matt@mattblair.co",
+    "web": "http://duereg.github.io"
   }],
 }

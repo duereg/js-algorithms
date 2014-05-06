@@ -1,13 +1,13 @@
-var createBst = require("../../../lib/algorithms/4-binaryTrees/createBst.js"); 
+var createBst = require("../../../lib/algorithms/4-binaryTrees/createBst.js");
 
 describe('Given an array sorted in ascending order, create a binary search tree', function () {
-	var array; 
+	var array;
 
-	beforeEach(function() {	
+	beforeEach(function() {
 		array = [];
 	});
- 
-	it('with a array of size 1', function () {   
+
+	it('with a array of size 1', function () {
 		array.push(10);
 
 		var bst = createBst(array);
@@ -15,8 +15,8 @@ describe('Given an array sorted in ascending order, create a binary search tree'
 		expect(bst).not.toBe(null);
 		expect(bst.data).toBe(10);
 	});
- 
-	it('with a array of size 2', function () {   
+
+	it('with a array of size 2', function () {
 		array.push(10);
 		array.push(9);
 
@@ -26,8 +26,8 @@ describe('Given an array sorted in ascending order, create a binary search tree'
 		expect(bst.data).toBe(10);
 		expect(bst.left.data).toBe(9);
 	});
- 
-	it('with a array of size 3', function () {   
+
+	it('with a array of size 3', function () {
 		array.push(10);
 		array.push(9);
 		array.push(8);
@@ -39,8 +39,8 @@ describe('Given an array sorted in ascending order, create a binary search tree'
 		expect(bst.left.data).toBe(8);
 		expect(bst.right.data).toBe(10);
 	});
- 
-	it('with a array of size 4', function () {   
+
+	it('with a array of size 4', function () {
 		array.push(10);
 		array.push(9);
 		array.push(8);

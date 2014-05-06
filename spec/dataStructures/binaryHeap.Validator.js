@@ -2,7 +2,7 @@ var validate = function(heap) {
 	if(heap === undefined) throw "A valid heap must be provided to validate.";
 	this.heap = heap;
 }
- 
+
 validate.prototype.isValid = function(parent, length){
 
 	if (arguments.length === 0) {

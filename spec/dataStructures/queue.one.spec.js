@@ -1,19 +1,19 @@
-var Queue = require("../../lib/dataStructures/queue.js"); 
+var Queue = require("../../lib/dataStructures/queue.js");
 
 describe('When adding an element onto a Queue', function () {
-	var myQueue; 
-	var firstValue = 1; 
+	var myQueue;
+	var firstValue = 1;
 
-	beforeEach(function() {		
+	beforeEach(function() {
 		myQueue = new Queue();
-		myQueue.add(firstValue); 
+		myQueue.add(firstValue);
 	});
 
 	afterEach(function() {
 		myQueue = null;
 	});
 
-	it('the Queues` length should be 1', function () { 
+	it('the Queues` length should be 1', function () {
 		expect(myQueue.length).toBe(1);
 	});
 
@@ -27,18 +27,18 @@ describe('When the Queue contains one element and your remove it', function () {
 	var myQueue;
 	var testValue = 1;
 
-	beforeEach(function() {		
+	beforeEach(function() {
 		myQueue = new Queue();
-		myQueue.add(testValue); 
-		myQueue.remove(testValue); 
-		
+		myQueue.add(testValue);
+		myQueue.remove(testValue);
+
 	});
 
 	afterEach(function() {
 		myQueue = null;
 	});
 
-	it('the Queue`s length should be zero', function () { 
+	it('the Queue`s length should be zero', function () {
 		expect(myQueue.length).toBe(0);
 	});
 

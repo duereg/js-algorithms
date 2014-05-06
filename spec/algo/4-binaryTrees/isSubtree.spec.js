@@ -1,8 +1,8 @@
-var isSubtree = require("../../../lib/algorithms/4-binaryTrees/isSubtree.js"); 
-var bst = require("../../../lib/dataStructures/binarySearchTree.js"); 
+var isSubtree = require("../../../lib/algorithms/4-binaryTrees/isSubtree.js");
+var bst = require("../../../lib/dataStructures/binarySearchTree.js");
 
 describe('Given two binary trees, determine if one tree is a subtree of the other', function () {
-    
+
     var parentTree = new bst();
         parentTree.add(10);
         parentTree.add(5);
@@ -24,7 +24,7 @@ describe('Given two binary trees, determine if one tree is a subtree of the othe
 
     var subTree4 = new bst();
         subTree4.add(2);
-        
+
     var unSubTree1 = new bst();
         unSubTree1.add(1);
         unSubTree1.add(2);
@@ -40,27 +40,27 @@ describe('Given two binary trees, determine if one tree is a subtree of the othe
         unSubTree4.add(5);
         unSubTree4.add(15);
 
-    it('a subtree for the left branch will verify', function () {   
+    it('a subtree for the left branch will verify', function () {
         expect(isSubtree(parentTree.head, subTree2)).toBe(true);
     });
- 
-    it('a subtree for the right branch will verify', function () {   
+
+    it('a subtree for the right branch will verify', function () {
         expect(isSubtree(parentTree.head, subTree3)).toBe(true);
     });
 
-    it('a single-node subtree for a bottom leat will verify', function () {   
+    it('a single-node subtree for a bottom leat will verify', function () {
         expect(isSubtree(parentTree.head, subTree4)).toBe(true);
     });
 
-    it('a tree that matches the top three elements will not verify', function () {   
+    it('a tree that matches the top three elements will not verify', function () {
         expect(isSubtree(parentTree.head, unSubTree4)).toBe(false);
     });
 
-    it('a bogus tree will not verify', function () {   
+    it('a bogus tree will not verify', function () {
         expect(isSubtree(parentTree.head, unSubTree1)).toBe(false);
     });
 
-    it('a mostly correct tree will not verify', function () {   
+    it('a mostly correct tree will not verify', function () {
         expect(isSubtree(parentTree.head, unSubTree2)).toBe(false);
     });
 });
