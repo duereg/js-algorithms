@@ -1,4 +1,8 @@
-js-algorithms
+[![Build Status](https://travis-ci.org/duereg/js-algorithms.png)](https://travis-ci.org/duereg/js-algorithms)
+[![Dependencies](https://david-dm.org/duereg/js-algorithms.png)](https://david-dm.org/duereg/js-algorithms)
+[![devDependencies](https://david-dm.org/duereg/js-algorithms/dev-status.png)](https://david-dm.org/duereg/js-algorithms#info=devDependencies&view=table)
+
+JS-Algorithms
 =============
 
 Classic data structures and algorithms written in JavaScript
@@ -21,6 +25,6 @@ As well as the following algorithms:
 * Merge Sort
 * Quick Sort
 
-Various problems will be solved to show how to use these basic algorithms and data structures. 
+Various problems will be solved to show how to use these basic algorithms and data structures.
 
-The process of creating this code is documentated at http://codetype.wordpress.com 
+The process of creating this code is documentated [here](//matt.mattblair.co)
