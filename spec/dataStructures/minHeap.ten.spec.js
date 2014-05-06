@@ -1,10 +1,10 @@
-var minHeap = require("../../lib/dataStructures/minHeap.js"); 
-var heapValidator = require("./binaryHeap.Validator.js"); 
+var minHeap = require("../../lib/dataStructures/minHeap.js");
+var heapValidator = require("./binaryHeap.Validator.js");
 
 describe('When adding ten elements to the min heap', function () {
 	var list;
 
-	beforeEach(function() {		
+	beforeEach(function() {
 		list = new minHeap();
 		list.add(20);
 		list.add(10);
@@ -15,30 +15,30 @@ describe('When adding ten elements to the min heap', function () {
 		list.add(70);
 		list.add(40);
 		list.add(50);
-		list.add(60); 
+		list.add(60);
 	});
 
 	afterEach(function() {
 		list = null;
 	});
 
-	it('the minHeap length should by 10', function () { 
+	it('the minHeap length should by 10', function () {
 		expect(list.array.length).toBe(10);
 	});
 
-	it('the 1st element of the minHeap should be the smallest value of the ten.', function () {   
+	it('the 1st element of the minHeap should be the smallest value of the ten.', function () {
 		expect(list.array[0]).toBe(-10);
 	});
 
-	it('and you remove the head, it should be the smallest element.', function () {   
+	it('and you remove the head, it should be the smallest element.', function () {
 		expect(list.removeHead()).toBe(-10);
-	});    
+	});
 
-	it('and you remove the head twice, you should get the two smallest elements.', function () {   
+	it('and you remove the head twice, you should get the two smallest elements.', function () {
 		expect(list.removeHead()).toBe(-10);
 		//console.log(list.array);
 		expect(list.removeHead()).toBe(10);
-	});   
+	});
 
 	it('the min heap is valid', function() {
 		var validator = new heapValidator(list);

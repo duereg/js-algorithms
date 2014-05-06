@@ -1,7 +1,7 @@
-var isRoute = require("../../../lib/algorithms/4-binaryTrees/isRoute.js"); 
+var isRoute = require("../../../lib/algorithms/4-binaryTrees/isRoute.js");
 
 describe('When testing a directed graph, determine if there is a route', function () {
-	var graph; 
+	var graph;
 	var a;
 	var b;
 	var c;
@@ -9,7 +9,7 @@ describe('When testing a directed graph, determine if there is a route', functio
 	var e;
 	var f;
 
-	beforeEach(function() {	
+	beforeEach(function() {
 		graph = { children: []};
 		a = { data: "a", children: []};
 		b = { data: "b", children: []};
@@ -37,18 +37,18 @@ describe('When testing a directed graph, determine if there is a route', functio
 		e.children.push(d);
 		e.children.push(f);
 		g.children.push(d);
-		
+
 	});
- 
-	it('A route can be found from a to f', function () {   
+
+	it('A route can be found from a to f', function () {
 		expect(isRoute(graph, a, f)).toBe(true);
 	});
- 
-	it('A route can be found from g to f', function () {   
+
+	it('A route can be found from g to f', function () {
 		expect(isRoute(graph, g, f)).toBe(true);
 	});
- 
-	it('No route exists between a and g', function () {   
+
+	it('No route exists between a and g', function () {
 		expect(isRoute(graph, a, g)).toBe(false);
 	});
 });
