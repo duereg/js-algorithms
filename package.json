@@ -18,4 +18,8 @@
     "email": "matt@mattblair.co",
     "web": "http://duereg.github.io"
   }],
+  "scripts": {
+    "pretest": "npm install",
+    "test": "jasmine-node spec"
+  }
 }

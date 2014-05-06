@@ -38,7 +38,6 @@ describe('When adding ten elements to the max heap via constructor', function ()
 
 	it('and you remove the head twice, you should get the two largest elements.', function () {
 		expect(list.removeHead()).toBe(100);
-		console.log(list.array);
 		expect(list.removeHead()).toBe(90);
 	});
 
