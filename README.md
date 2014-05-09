@@ -27,4 +27,4 @@ As well as the following algorithms:
 
 Various problems will be solved to show how to use these basic algorithms and data structures.
 
-The process of creating this code is documentated [here](//matt.mattblair.co)
+The process of creating this code is documentated [here](http://blog.mattblair.co)
