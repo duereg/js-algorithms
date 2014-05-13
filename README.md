@@ -5,9 +5,7 @@
 JS-Algorithms
 =============
 
-Classic data structures and algorithms written in JavaScript
-
-The goal is to develop (with tests) the following basic data structures:
+Classic data structures and algorithms (with tests!) written in JavaScript
 
 * Singly Linked List
 * Min/Max Binary Heap
@@ -27,4 +25,4 @@ As well as the following algorithms:
 
 Various problems will be solved to show how to use these basic algorithms and data structures.
 
-The process of creating this code is documentated [here](http://blog.mattblair.co)
+The process of creating this code was documented [here](http://blog.mattblair.co)
