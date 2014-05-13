@@ -1,9 +1,9 @@
 {
   "name": "js-algorithms",
   "description": "Javascript versions of classic software development algorithms",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "lib/dataStructures/index.js",
-  "dependencies": {
+  "devDependencies": {
     "jasmine-node": "*"
   },
   "author": {
