@@ -25,4 +25,24 @@ As well as the following algorithms:
 
 Various problems will be solved to show how to use these basic algorithms and data structures.
 
-The process of creating this code was documented [here](http://blog.mattblair.co)
+The process of creating this code is documented [here](http://blog.mattblair.co).
+
+##Usage
+
+If you want access to these basic data structures in your project, include this package.
+
+```shell
+> var dataStructures = require('js-algorithms')
+> dataStructures
+{ binaryHeap: [Function],
+  binarySearchTree: [Function: bst],
+  linkedList: [Function],
+  maxHeap: [Function],
+  minHeap: [Function],
+  queue: [Function],
+  stack: [Function],
+  stackQueue: [Function],
+  trie: [Function] }
+```
+
+
