@@ -1,15 +1,16 @@
 {
   "name": "js-algorithms",
   "description": "Javascript versions of classic software development algorithms",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "main": "lib/dataStructures/index.js",
+  "repository": "git@github.com:duereg/js-algorithms.git",
   "devDependencies": {
     "jasmine-node": "*"
   },
   "author": {
     "name": "Matt Blair",
     "email": "matt@mattblair.co",
-    "url": "http://duereg.github.io"
+    "url": "http://blog.mattblair.co"
   },
   "engines": {
     "node": ">=0.4.0"
@@ -18,7 +19,7 @@
     {
       "name": "Matt Blair",
       "email": "matt@mattblair.co",
-      "web": "http://duereg.github.io"
+      "web": "http://blog.mattblair.co"
     }
   ],
   "scripts": {
