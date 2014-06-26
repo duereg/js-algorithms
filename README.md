@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/duereg/js-algorithms.png)](https://travis-ci.org/duereg/js-algorithms)
-[![Dependencies](https://david-dm.org/duereg/js-algorithms.png)](https://david-dm.org/duereg/js-algorithms)
-[![devDependencies](https://david-dm.org/duereg/js-algorithms/dev-status.png)](https://david-dm.org/duereg/js-algorithms#info=devDependencies&view=table)
+[![Build Status](https://travis-ci.org/duereg/js-algorithms.svg)](https://travis-ci.org/duereg/js-algorithms)
+[![Dependencies](https://david-dm.org/duereg/js-algorithms.svg)](https://david-dm.org/duereg/js-algorithms)
+[![devDependencies](https://david-dm.org/duereg/js-algorithms/dev-status.svg)](https://david-dm.org/duereg/js-algorithms#info=devDependencies&view=table)
 [![NPM version](https://badge.fury.io/js/js-algorithms.svg)](http://badge.fury.io/js/js-algorithms)
 
 JS-Algorithms
