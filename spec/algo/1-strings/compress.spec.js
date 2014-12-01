@@ -13,19 +13,19 @@ describe('When using compress() on a string', function () {
 
 	var uncompressable = "asdfghjklzxcvbnm"
 
-	it('if the string is compressable, a new compressed string will be returned.', function () {
+	it('if the string is compressible, a new compressed string will be returned.', function () {
 		expect(compress(preCompress1)).toEqual(postCompress1);
 	});
 
-	it('if the string is compressable, and has a different character at the end, a new compressed string will be returned.', function () {
+	it('if the string is compressible, and has a different character at the end, a new compressed string will be returned.', function () {
 		expect(compress(preCompress2)).toEqual(postCompress2);
 	});
 
-	it('if the string is compressable, and has a different character at the beginning, a new compressed string will be returned.', function () {
+	it('if the string is compressible, and has a different character at the beginning, a new compressed string will be returned.', function () {
 		expect(compress(preCompress3)).toEqual(postCompress3);
 	});
 
-	it('if a string is not compressable, the same string will be returned', function () {
+	it('if a string is not compressible, the same string will be returned', function () {
 		expect(compress(uncompressable)).toEqual(uncompressable);
 	});
 
