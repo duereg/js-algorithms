@@ -24,7 +24,7 @@ describe('Given a binary tree containing the value 16, determine if the depth fi
 
   it('the order of search is correct', function () {
     var matcher = { matcher: function(value) { return value === 16 }};
-    spyOn(matcher, "matcher").andCallThrough();
+    spyOn(matcher, "matcher").and.callThrough();
 
     expect(depthFirstSearch(balanced.head, matcher.matcher)).toBe(true);
     expect(matcher.matcher).toHaveBeenCalledWith(10);
