@@ -23,14 +23,17 @@ As well as the following algorithms:
 * Binary Search
 * Merge Sort
 * Quick Sort
+* Shuffle (Fisher–Yates)
 
-Various problems will be solved to show how to use these basic algorithms and data structures.
+This project contains a collection of solved problems.
 
-The process of creating this code is documented [here](http://blog.mattblair.co).
+Hopefully these serve as examples of how to use these algorithms and data structures.
+
+I've documented the process of creating this code [here](http://blog.mattblair.co).
 
 ##Usage
 
-If you want access to these basic data structures in your project, include this package.
+If you want access to these data structures in your project, include this package.
 
 ```shell
 > var algorithms: = require('js-algorithms')
@@ -49,7 +52,10 @@ If you want access to these basic data structures in your project, include this 
   algorithms: {
     sorting: {
       quickSort: [Function]
-      mergeSort: [Function] }}}
+      mergeSort: [Function]
+    },
+    shuffle: [Function]
+  }}
 ```
 
 
