@@ -1,7 +1,6 @@
 var escape = require("../../../lib/algorithms/1-strings/escape.js");
 
 describe('When using escape() on a string', function () {
-
 	var preEscape = "A beautiful test string      ";
 	var postEscape = "A%20beautiful%20test%20string";
 
