@@ -38,7 +38,7 @@
   "plusplus": false,
   "quotmark": true,
   "shadow": false,
-  "singleGroups": true,
+  "singleGroups": false,
   "strict": true,
   "undef": true,
   "unused": true
