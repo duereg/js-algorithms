@@ -1,16 +1,18 @@
-var compress = require("../../../lib/algorithms/1-strings/compress.js");
+'use strict';
+
+var compress = require('../../../lib/algorithms/1-strings/compress.js');
 
 describe('When using compress() on a string', function() {
-	var preCompress1 = "aaabbbccccddeeeee";
-	var postCompress1 = "a3b3c4d2e5";
+	var preCompress1 = 'aaabbbccccddeeeee';
+	var postCompress1 = 'a3b3c4d2e5';
 
-	var preCompress2 = "aaabbbccccddeeeeez";
-	var postCompress2 = "a3b3c4d2e5z1";
+	var preCompress2 = 'aaabbbccccddeeeeez';
+	var postCompress2 = 'a3b3c4d2e5z1';
 
-	var preCompress3 = "zaaabbbccccddeeeee";
-	var postCompress3 = "z1a3b3c4d2e5";
+	var preCompress3 = 'zaaabbbccccddeeeee';
+	var postCompress3 = 'z1a3b3c4d2e5';
 
-	var uncompressable = "asdfghjklzxcvbnm"
+	var uncompressable = 'asdfghjklzxcvbnm';
 
 	it('if the string is compressible, a new compressed string will be returned.', function() {
 		expect(compress(preCompress1)).toEqual(postCompress1);
