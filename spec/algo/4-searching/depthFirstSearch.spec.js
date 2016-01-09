@@ -1,7 +1,7 @@
 var depthFirstSearch = require("../../../lib/algorithms/4-searching/depthFirstSearch.js");
 var bst = require("../../../lib/dataStructures/binarySearchTree.js");
 
-describe('Given a binary tree containing the value 16, determine if the depth first search', function () {
+describe('Given a binary tree containing the value 8, determine if the depth first search', function () {
     var balanced;
     beforeEach(function() {
       balanced = new bst();
@@ -14,8 +14,8 @@ describe('Given a binary tree containing the value 16, determine if the depth fi
       balanced.add(16);
     });
 
-  it('can find the value 16 in the tree', function () {
-    expect(depthFirstSearch(balanced.head, function(value) { return value === 16 })).toBe(true);
+  it('can find the value 8 in the tree', function () {
+    expect(depthFirstSearch(balanced.head, function(value) { return value === 8 })).toBe(true);
   });
 
   it('cannot find the value 11', function () {
@@ -23,16 +23,16 @@ describe('Given a binary tree containing the value 16, determine if the depth fi
   });
 
   it('the order of search is correct', function () {
-    var matcher = { matcher: function(value) { return value === 16 }};
+    var matcher = { matcher: function(value) { return value === 8 }};
     spyOn(matcher, "matcher").and.callThrough();
 
     expect(depthFirstSearch(balanced.head, matcher.matcher)).toBe(true);
     expect(matcher.matcher).toHaveBeenCalledWith(10);
     expect(matcher.matcher).toHaveBeenCalledWith(5);
     expect(matcher.matcher).toHaveBeenCalledWith(15);
-    expect(matcher.matcher).toHaveBeenCalledWith(2);
-    expect(matcher.matcher).toHaveBeenCalledWith(8);
     expect(matcher.matcher).toHaveBeenCalledWith(12);
     expect(matcher.matcher).toHaveBeenCalledWith(16);
+    expect(matcher.matcher).toHaveBeenCalledWith(2);
+    expect(matcher.matcher).toHaveBeenCalledWith(8);
   });
 });
