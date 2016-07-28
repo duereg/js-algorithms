@@ -1,0 +1,18 @@
+{
+  "globals": {
+    "describe": true,
+    "xdescribe": true,
+    "it": true,
+    "before": true,
+    "after": true,
+    "beforeEach": true,
+    "afterEach": true,
+    "context": true
+  },
+  "rules": {
+    "one-var": [0, "always"],         // http://eslint.org/docs/rules/one-var
+    "func-names": 0,                  // http://eslint.org/docs/rules/func-names
+    "new-cap": 1,
+    "no-unused-expressions": 0
+  }
+}

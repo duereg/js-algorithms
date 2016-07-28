@@ -1,5 +1,5 @@
-const addTwoLists = require("../../../lib/algorithms/2-linkedLists/addTwoLists.js");
-const LinkedList = require("../../../lib/dataStructures/linkedList.js");
+const addTwoLists = require('../../../lib/algorithms/2-linkedLists/addTwoLists.js');
+const LinkedList = require('../../../lib/dataStructures/linkedList.js');
 
 describe('When using addTwoLists() on two linked lists', function () {
   let oneTwoThree, twoThreeFour, nineNineOne, nineNineOneOne;

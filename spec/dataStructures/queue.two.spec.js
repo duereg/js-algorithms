@@ -1,7 +1,7 @@
-const Queue = require("../../lib/dataStructures/queue.js");
+const Queue = require('../../lib/dataStructures/queue.js');
 
-const testValue1 = "test_string1"
-const testValue2 = "test_string2"
+const testValue1 = 'test_string1';
+const testValue2 = 'test_string2';
 
 describe('When adding two elements to a Queue', function () {
   let myQueue;

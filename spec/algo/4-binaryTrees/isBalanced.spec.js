@@ -1,5 +1,5 @@
-const isBalanced = require("../../../lib/algorithms/4-binaryTrees/isBalanced.js");
-const bst = require("../../../lib/dataStructures/binarySearchTree.js");
+const isBalanced = require('../../../lib/algorithms/4-binaryTrees/isBalanced.js');
+const bst = require('../../../lib/dataStructures/binarySearchTree.js');
 
 describe('When testing a binary search tree using isBalanced()', function () {
   let tree;

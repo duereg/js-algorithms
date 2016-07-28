@@ -1,8 +1,8 @@
-const binaryHeap = require("../../lib/dataStructures/binaryHeap.js");
+const binaryHeap = require('../../lib/dataStructures/binaryHeap.js');
 
 describe('When adding one element to the binary heap', function () {
   let list;
-  let testValue = "test_string"
+  let testValue = 'test_string';
 
   beforeEach(function () {
     list = new binaryHeap();

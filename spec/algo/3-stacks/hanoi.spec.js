@@ -1,5 +1,5 @@
-const towerOfHanoi = require("../../../lib/algorithms/3-stacks/hanoi.js");
-const stack = require("../../../lib/dataStructures/stack.js");
+const towerOfHanoi = require('../../../lib/algorithms/3-stacks/hanoi.js');
+const stack = require('../../../lib/dataStructures/stack.js');
 
 describe('When dealing with the Tower of Hanoi', () => {
   let target, helper, source;
@@ -10,7 +10,7 @@ describe('When dealing with the Tower of Hanoi', () => {
     source = new stack();
   });
 
-  it("null is less than 1", () => {
+  it('null is less than 1', () => {
     expect(null < 1).toBe(true);
   });
 

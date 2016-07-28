@@ -1,5 +1,5 @@
-const maxHeap = require("../../lib/dataStructures/maxHeap.js");
-const heapValidator = require("./binaryHeap.Validator.js");
+const maxHeap = require('../../lib/dataStructures/maxHeap.js');
+const heapValidator = require('./binaryHeap.Validator.js');
 
 describe('When adding ten elements to the max heap', function () {
   let list;
@@ -44,5 +44,5 @@ describe('When adding ten elements to the max heap', function () {
     expect(validator.isValid()).toBe(true);
   });
 
-  //todo: add check to actually walk tree and check all relationships
+  // todo: add check to actually walk tree and check all relationships
 });

@@ -1,13 +1,12 @@
-const LinkedList = require("../../lib/dataStructures/linkedList.js");
+const LinkedList = require('../../lib/dataStructures/linkedList.js');
 
 describe('When adding one element to a linked list', function () {
   let list;
-  let testValue = "test_string"
+  let testValue = 'test_string';
 
   beforeEach(function () {
     list = new LinkedList();
     list.add(testValue);
-
   });
 
   afterEach(function () {
@@ -37,13 +36,12 @@ describe('When adding one element to a linked list', function () {
 
 describe('When the list contains one element and your remove it', function () {
   let list;
-  let testValue = "test_string"
+  let testValue = 'test_string';
 
   beforeEach(function () {
     list = new LinkedList();
     list.add(testValue);
     list.remove(testValue);
-
   });
 
   afterEach(function () {

@@ -1,7 +1,7 @@
-const stack = require("../../lib/dataStructures/stack.js");
+const stack = require('../../lib/dataStructures/stack.js');
 
-const testValue1 = "test_string1"
-const testValue2 = "test_string2"
+const testValue1 = 'test_string1';
+const testValue2 = 'test_string2';
 
 describe('When pushing two elements to a stack', function () {
   let myStack;

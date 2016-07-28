@@ -1,4 +1,4 @@
-const quickSort = require("../../../lib/algorithms/11-sorting/quickSort.js");
+const quickSort = require('../../../lib/algorithms/11-sorting/quickSort.js');
 
 describe('When using QuickSort on an unsorted Array', function () {
   let unsortedLength, sortedArray;

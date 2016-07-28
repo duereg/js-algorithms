@@ -1,11 +1,11 @@
-const trie = require("../../lib/dataStructures/trie.js");
+const trie = require('../../lib/dataStructures/trie.js');
 
 describe('Given a trie containing the words "free", "freed", "freedom", and "frees"', function () {
   let tree;
-  let testValue1 = "free";
-  let testValue2 = "freed";
-  let testValue3 = "frees";
-  let testValue5 = "freedom";
+  let testValue1 = 'free';
+  let testValue2 = 'freed';
+  let testValue3 = 'frees';
+  let testValue5 = 'freedom';
 
   beforeEach(function () {
     tree = new trie();
@@ -27,15 +27,15 @@ describe('Given a trie containing the words "free", "freed", "freedom", and "fre
     expect(sorted[1]).toBe(testValue2);
     expect(sorted[2]).toBe(testValue5);
     expect(sorted[3]).toBe(testValue3);
-  })
+  });
 });
 
 describe('Given a trie containing the words "apple", "banana", "cherry", and "fejoya"', function () {
   let tree;
-  let testValue1 = "apple";
-  let testValue2 = "banana";
-  let testValue3 = "cherry";
-  let testValue5 = "fejoya";
+  let testValue1 = 'apple';
+  let testValue2 = 'banana';
+  let testValue3 = 'cherry';
+  let testValue5 = 'fejoya';
 
   beforeEach(function () {
     tree = new trie();
@@ -57,5 +57,5 @@ describe('Given a trie containing the words "apple", "banana", "cherry", and "fe
     expect(sorted[1]).toBe(testValue2);
     expect(sorted[2]).toBe(testValue3);
     expect(sorted[3]).toBe(testValue5);
-  })
+  });
 });

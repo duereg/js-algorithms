@@ -1,11 +1,11 @@
-const minHeap = require("../../lib/dataStructures/minHeap.js");
-const heapValidator = require("./binaryHeap.Validator.js");
+const minHeap = require('../../lib/dataStructures/minHeap.js');
+const heapValidator = require('./binaryHeap.Validator.js');
 
 describe('When adding ten elements to the min heap via constructor', function () {
   let array, list;
 
   beforeEach(function () {
-    array = []
+    array = [];
     array.push(20);
     array.push(10);
     array.push(100);
@@ -46,5 +46,5 @@ describe('When adding ten elements to the min heap via constructor', function ()
     expect(validator.isValid()).toBe(true);
   });
 
-  //todo: add check to actually walk tree and check all relationships
+  // todo: add check to actually walk tree and check all relationships
 });

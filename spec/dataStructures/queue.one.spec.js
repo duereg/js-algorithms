@@ -1,4 +1,4 @@
-const Queue = require("../../lib/dataStructures/queue.js");
+const Queue = require('../../lib/dataStructures/queue.js');
 
 describe('When adding an element onto a Queue', function () {
   let myQueue;

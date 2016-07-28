@@ -1,5 +1,5 @@
-const verifyIsBst = require("../../../lib/algorithms/4-binaryTrees/verifyIsBst.js");
-const bst = require("../../../lib/dataStructures/binarySearchTree.js");
+const verifyIsBst = require('../../../lib/algorithms/4-binaryTrees/verifyIsBst.js');
+const bst = require('../../../lib/dataStructures/binarySearchTree.js');
 
 describe('Given a binary tree, determine if the tree is a binary search tree', function () {
   it('a BST will verify correctly', function () {

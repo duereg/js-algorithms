@@ -1,8 +1,8 @@
-const LinkedList = require("../../lib/dataStructures/linkedList.js");
+const LinkedList = require('../../lib/dataStructures/linkedList.js');
 
-const testValue1 = "test_string1"
-const testValue2 = "test_string2"
-const testValue3 = "test_string3"
+const testValue1 = 'test_string1';
+const testValue2 = 'test_string2';
+const testValue3 = 'test_string3';
 
 let list;
 

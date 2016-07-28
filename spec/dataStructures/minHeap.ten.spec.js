@@ -1,5 +1,5 @@
-const minHeap = require("../../lib/dataStructures/minHeap.js");
-const heapValidator = require("./binaryHeap.Validator.js");
+const minHeap = require('../../lib/dataStructures/minHeap.js');
+const heapValidator = require('./binaryHeap.Validator.js');
 
 describe('When adding ten elements to the min heap', function () {
   let list;
@@ -32,7 +32,7 @@ describe('When adding ten elements to the min heap', function () {
 
   it('and you remove the head twice, you should get the two smallest elements.', function () {
     expect(list.removeHead()).toBe(-10);
-    //console.log(list.array);
+    // console.log(list.array);
     expect(list.removeHead()).toBe(10);
   });
 
@@ -41,5 +41,5 @@ describe('When adding ten elements to the min heap', function () {
     expect(validator.isValid()).toBe(true);
   });
 
-  //todo: add check to actually walk tree and check all relationships
+  // todo: add check to actually walk tree and check all relationships
 });

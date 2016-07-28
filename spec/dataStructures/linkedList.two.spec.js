@@ -1,7 +1,7 @@
-const LinkedList = require("../../lib/dataStructures/linkedList.js");
+const LinkedList = require('../../lib/dataStructures/linkedList.js');
 
-const testValue1 = "test_string1"
-const testValue2 = "test_string2"
+const testValue1 = 'test_string1';
+const testValue2 = 'test_string2';
 
 describe('When adding two elements to a linked list', function () {
   let list;

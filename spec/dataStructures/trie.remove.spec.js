@@ -1,9 +1,9 @@
-const trie = require("../../lib/dataStructures/trie.js");
+const trie = require('../../lib/dataStructures/trie.js');
 
 describe('Given a trie containing the word "Philadelphia"', function () {
   let tree;
-  let testValue = "Philadelphia"
-  let testValue2 = "Phil";
+  let testValue = 'Philadelphia';
+  let testValue2 = 'Phil';
 
   beforeEach(function () {
     tree = new trie();
@@ -28,8 +28,8 @@ describe('Given a trie containing the word "Philadelphia"', function () {
 
 describe('Given a trie containing the words "Philadelphia" and "Phil"', function () {
   let tree;
-  let testValue = "Philadelphia"
-  let testValue2 = "Phil";
+  let testValue = 'Philadelphia';
+  let testValue2 = 'Phil';
 
   beforeEach(function () {
     tree = new trie();
@@ -64,10 +64,10 @@ describe('Given a trie containing the words "Philadelphia" and "Phil"', function
 
 describe('Given a trie containing the words "free", "freed", "freedom", and "frees"', function () {
   let tree;
-  let testValue1 = "free";
-  let testValue2 = "freed";
-  let testValue3 = "frees";
-  let testValue5 = "freedom";
+  let testValue1 = 'free';
+  let testValue2 = 'freed';
+  let testValue3 = 'frees';
+  let testValue5 = 'freedom';
 
   beforeEach(function () {
     tree = new trie();
@@ -82,7 +82,7 @@ describe('Given a trie containing the words "free", "freed", "freedom", and "fre
   });
 
 
-  it('after deleting ' + testValue2 + ", " + testValue1 + " & " + testValue5 + " should still exist", function () {
+  it('after deleting ' + testValue2 + ', ' + testValue1 + ' & ' + testValue5 + ' should still exist', function () {
     tree.remove(testValue2);
     expect(tree.hasWord(testValue1)).toBe(true);
     expect(tree.hasWord(testValue2)).toBe(false);
@@ -91,8 +91,7 @@ describe('Given a trie containing the words "free", "freed", "freedom", and "fre
   });
 
 
-
-  it('after deleting ' + testValue3 + " & " + testValue5 + ", " + testValue1 + " & " + testValue2 + " should still exist", function () {
+  it('after deleting ' + testValue3 + ' & ' + testValue5 + ', ' + testValue1 + ' & ' + testValue2 + ' should still exist', function () {
     tree.remove(testValue3);
     tree.remove(testValue5);
     expect(tree.hasWord(testValue1)).toBe(true);
@@ -102,10 +101,9 @@ describe('Given a trie containing the words "free", "freed", "freedom", and "fre
   });
 });
 
-describe("When calling trie.remove() with the word undefined", function () {
-
+describe('When calling trie.remove() with the word undefined', function () {
   it('the remove() method will throw an exception', function () {
     let tree = new trie();
     expect(tree.remove).toThrow();
-  })
+  });
 });

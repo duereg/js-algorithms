@@ -1,4 +1,4 @@
-const mergeSort = require("../../../lib/algorithms/11-sorting/mergeSort.js");
+const mergeSort = require('../../../lib/algorithms/11-sorting/mergeSort.js');
 
 describe('When using MergeSort on an unsorted Array', function () {
   let unsortedLength, unsortedArray, sortedArray;
@@ -25,4 +25,4 @@ describe('When using MergeSort on an unsorted Array', function () {
   it('the last element will be 10', function () {
     expect(sortedArray[sortedArray.length - 1]).toEqual(10);
   });
-})
+});

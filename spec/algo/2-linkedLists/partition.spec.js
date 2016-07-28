@@ -1,5 +1,5 @@
-const partition = require("../../../lib/algorithms/2-linkedLists/partition.js");
-const LinkedList = require("../../../lib/dataStructures/linkedList.js");
+const partition = require('../../../lib/algorithms/2-linkedLists/partition.js');
+const LinkedList = require('../../../lib/dataStructures/linkedList.js');
 
 describe('When using partition(10) on a linked list of integers', () => {
   let list, noDupes, number = 10;

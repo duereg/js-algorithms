@@ -1,5 +1,5 @@
-const isSubtree = require("../../../lib/algorithms/4-binaryTrees/isSubtree.js");
-const bst = require("../../../lib/dataStructures/binarySearchTree.js");
+const isSubtree = require('../../../lib/algorithms/4-binaryTrees/isSubtree.js');
+const bst = require('../../../lib/dataStructures/binarySearchTree.js');
 
 describe('Given two binary trees, determine if one tree is a subtree of the other', function () {
   let parentTree, subTree2, subTree3, subTree4, unSubTree1, unSubTree2, unSubTree4;

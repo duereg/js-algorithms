@@ -1,5 +1,5 @@
-const bst = require("../../../lib/dataStructures/binarySearchTree.js");
-const makeList = require("../../../lib/algorithms/4-binaryTrees/makeList.js");
+const bst = require('../../../lib/dataStructures/binarySearchTree.js');
+const makeList = require('../../../lib/algorithms/4-binaryTrees/makeList.js');
 
 describe('Given a binary search tree, create a linked list at each depth', function () {
   let tree;

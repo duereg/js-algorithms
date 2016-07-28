@@ -20,13 +20,11 @@
   "engines": {
     "node": ">=0.4.0"
   },
-  "maintainers": [
-    {
-      "name": "Matt Blair",
-      "email": "matt@mattblair.co",
-      "web": "http://blog.mattblair.co"
-    }
-  ],
+  "maintainers": [{
+    "name": "Matt Blair",
+    "email": "matt@mattblair.co",
+    "web": "http://blog.mattblair.co"
+  }],
   "scripts": {
     "pretest": "npm install",
     "test": "jasmine-node spec"

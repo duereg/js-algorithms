@@ -1,5 +1,5 @@
-const printSum = require("../../../lib/algorithms/4-binaryTrees/printSum.js");
-const bst = require("../../../lib/dataStructures/binarySearchTree.js");
+const printSum = require('../../../lib/algorithms/4-binaryTrees/printSum.js');
+const bst = require('../../../lib/dataStructures/binarySearchTree.js');
 
 const sum = 6;
 const withSum = {
@@ -10,16 +10,16 @@ const withSum = {
       left: {
         data: 3,
         left: { data: 3, left: null, right: null },
-        right: { data: 1, left: null, right: null }
+        right: { data: 1, left: null, right: null },
       },
-      right: { data: 7, left: null, right: null }
+      right: { data: 7, left: null, right: null },
     },
     right: {
       data: 5,
       left: { data: 1, left: null, right: null },
-      right: { data: 6, left: null, right: null }
-    }
-  }
+      right: { data: 6, left: null, right: null },
+    },
+  },
 };
 
 let callsToPrint = 0;
@@ -35,7 +35,7 @@ function print(value) {
   } else {
     expect(value).toEqual(sum);
   }
-};
+}
 
 describe('Given a binary tree and a value, print every path that sums to that number', function () {
   beforeEach(function () {

@@ -1,42 +1,42 @@
-const isRoute = require("../../../lib/algorithms/4-binaryTrees/isRoute.js");
+const isRoute = require('../../../lib/algorithms/4-binaryTrees/isRoute.js');
 
 describe('When testing a directed graph, determine if there is a route', () => {
   let graph, a, b, c, d, e, f;
 
   beforeEach(() => {
     graph = {
-      children: []
+      children: [],
     };
     a = {
-      data: "a",
-      children: []
+      data: 'a',
+      children: [],
     };
     b = {
-      data: "b",
-      children: []
+      data: 'b',
+      children: [],
     };
     c = {
-      data: "c",
-      children: []
+      data: 'c',
+      children: [],
     };
     d = {
-      data: "d",
-      children: []
+      data: 'd',
+      children: [],
     };
     e = {
-      data: "e",
-      children: []
+      data: 'e',
+      children: [],
     };
     f = {
-      data: "f",
-      children: []
+      data: 'f',
+      children: [],
     };
     g = {
-      data: "g",
-      children: []
+      data: 'g',
+      children: [],
     };
 
-    //add children to graph
+    // add children to graph
     graph.children.push(a);
     graph.children.push(b);
     graph.children.push(c);
@@ -45,7 +45,7 @@ describe('When testing a directed graph, determine if there is a route', () => {
     graph.children.push(f);
     graph.children.push(g);
 
-    //directed graph with one loop - c->e->d, and no path between a & g
+    // directed graph with one loop - c->e->d, and no path between a & g
     a.children.push(b);
     a.children.push(c);
     b.children.push(c);
@@ -54,7 +54,6 @@ describe('When testing a directed graph, determine if there is a route', () => {
     e.children.push(d);
     e.children.push(f);
     g.children.push(d);
-
   });
 
   it('A route can be found from a to f', () => {

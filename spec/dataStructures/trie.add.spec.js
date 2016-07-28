@@ -1,7 +1,7 @@
-const trie = require("../../lib/dataStructures/trie.js");
+const trie = require('../../lib/dataStructures/trie.js');
 
-const testValue = "Philadelphia"
-const testValue2 = "Phil";
+const testValue = 'Philadelphia';
+const testValue2 = 'Phil';
 
 describe('Given a trie containing the word "Philadelphia"', function () {
   let tree;
@@ -54,10 +54,10 @@ describe('Given a trie containing the words "Philadelphia" and "Phil"', function
 
 describe('Given a trie containing the words "free", "freed", "freedom", and "frees"', function () {
   let tree;
-  let testValue1 = "free";
-  let testValue2 = "freed";
-  let testValue3 = "frees";
-  let testValue5 = "freedom";
+  let testValue1 = 'free';
+  let testValue2 = 'freed';
+  let testValue3 = 'frees';
+  let testValue5 = 'freedom';
 
   beforeEach(function () {
     tree = new trie();
@@ -98,9 +98,9 @@ describe('Given a trie containing the words "free", "freed", "freedom", and "fre
 
 describe('Given a trie containing the words "apple", "banana", and "orange"', function () {
   let tree;
-  let testValue1 = "apple";
-  let testValue2 = "banana";
-  let testValue3 = "orange";
+  let testValue1 = 'apple';
+  let testValue2 = 'banana';
+  let testValue3 = 'orange';
 
   beforeEach(function () {
     tree = new trie();
@@ -142,10 +142,9 @@ describe('Given a trie containing the words "apple", "banana", and "orange"', fu
   });
 });
 
-describe("When adding undefined to the trie", function () {
-
+describe('When adding undefined to the trie', function () {
   it('the add() method will throw an exception if given undefined', function () {
     let tree = new trie();
     expect(tree.add).toThrow();
-  })
+  });
 });
