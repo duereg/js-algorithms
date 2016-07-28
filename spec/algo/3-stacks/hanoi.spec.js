@@ -1,66 +1,75 @@
-var towerOfHanoi = require("../../../lib/algorithms/3-stacks/hanoi.js");
-var stack = require("../../../lib/dataStructures/stack.js");
+const towerOfHanoi = require("../../../lib/algorithms/3-stacks/hanoi.js");
+const stack = require("../../../lib/dataStructures/stack.js");
 
-describe('When dealing with the Tower of Hanoi', function () {
+describe('When dealing with the Tower of Hanoi', () => {
+  let target, helper, source;
 
-    var target;
-    var helper;
-    var source;
+  beforeEach(() => {
+    target = new stack();
+    helper = new stack();
+    source = new stack();
+  });
 
-    beforeEach(function() {
-        target = new stack();
-        helper = new stack();
-        source = new stack();
-    });
-    it("null is less than 1", function() {
-        expect(null < 1).toBe(true);
-    });
+  it("null is less than 1", () => {
+    expect(null < 1).toBe(true);
+  });
 
-    it('the source stack, starting with 1 element, ends up having 0 elements', function () {
-        test(1);
-        expect(source.length).toBe(0);
-    });
-    it('the helper stack, starting with 0 elements, ends up having 0 elements', function () {
-        test(1);
-        expect(helper.length).toBe(0);
-    });
-    it('the target stack, starting with 0 elements, ends up having 1 element', function () {
-        test(1);
-        expect(target.length).toBe(1);
+  describe('starting with 1 element', () => {
+    beforeEach(() => {
+      test(1);
     });
 
-    it('the source stack, starting with 2 elements, ends up having 0 elements', function () {
-        test(2);
-        expect(source.length).toBe(0);
-    });
-    it('the helper stack, starting with 0 elements, ends up having 0 elements', function () {
-        test(2);
-        expect(helper.length).toBe(0);
-    });
-    it('the target stack, starting with 0 elements, ends up having 2 elements', function () {
-        test(2);
-        expect(target.length).toBe(2);
+    it('the source stack ends up having 0 elements', () => {
+      expect(source.length).toBe(0);
     });
 
-    it('the source stack, starting with 3 elements, ends up having 0 elements', function () {
-        test(3);
-        expect(source.length).toBe(0);
-    });
-    it('the helper stack, starting with 0 elements, ends up having 0 elements', function () {
-        test(3);
-        expect(helper.length).toBe(0);
-    });
-    it('the target stack, starting with 0 elements, ends up having 3 elements', function () {
-        test(3);
-        expect(target.length).toBe(3);
+    it('the helper stack ends up having 0 elements', () => {
+      expect(helper.length).toBe(0);
     });
 
-    function test(number) {
+    it('the target stack ends up having 1 element', () => {
+      expect(target.length).toBe(1);
+    });
+  });
 
-        for(var i = number; i > 0; i--)
-        source.push(i);
+  describe('starting with 2 elements', () => {
+    beforeEach(() => {
+      test(2);
+    });
 
-        towerOfHanoi(source, helper, target);
-    }
+    it('the source stack ends up having 0 elements', () => {
+      expect(source.length).toBe(0);
+    });
 
+    it('the helper stack ends up having 0 elements', () => {
+      expect(helper.length).toBe(0);
+    });
+
+    it('the target stack ends up having 2 elements', () => {
+      expect(target.length).toBe(2);
+    });
+  });
+
+  describe('starting with 3 elements', () => {
+    beforeEach(() => {
+      test(3);
+    });
+
+    it('the source stack ends up having 0 elements', () => {
+      expect(source.length).toBe(0);
+    });
+    it('the helper stack ends up having 0 elements', () => {
+      expect(helper.length).toBe(0);
+    });
+    it('the target stack ends up having 3 elements', () => {
+      expect(target.length).toBe(3);
+    });
+  });
+
+  function test(number) {
+    for (var i = number; i > 0; i--)
+      source.push(i);
+
+    towerOfHanoi(source, helper, target);
+  }
 });

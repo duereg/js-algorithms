@@ -5,6 +5,11 @@
   "main": "index.js",
   "repository": "git@github.com:duereg/js-algorithms.git",
   "devDependencies": {
+    "eslint": "^2.13.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.12.0",
+    "eslint-plugin-jsx-a11y": "^1.5.5",
+    "eslint-plugin-react": "^5.2.2",
     "jasmine-node": "~2.0.0"
   },
   "author": {
