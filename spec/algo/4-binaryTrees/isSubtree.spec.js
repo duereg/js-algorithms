@@ -1,46 +1,17 @@
 const isSubtree = require('../../../lib/algorithms/4-binaryTrees/isSubtree.js');
-const bst = require('../../../lib/dataStructures/binarySearchTree.js');
+const BinarySearchTree = require('../../../lib/dataStructures/binarySearchTree.js');
 
 describe('Given two binary trees, determine if one tree is a subtree of the other', function () {
   let parentTree, subTree2, subTree3, subTree4, unSubTree1, unSubTree2, unSubTree4;
 
   beforeEach(() => {
-    parentTree = new bst();
-    parentTree.add(10);
-    parentTree.add(5);
-    parentTree.add(15);
-    parentTree.add(8);
-    parentTree.add(2);
-    parentTree.add(12);
-    parentTree.add(16);
-
-    subTree2 = new bst();
-    subTree2.add(5);
-    subTree2.add(8);
-    subTree2.add(2);
-
-    subTree3 = new bst();
-    subTree3.add(15);
-    subTree3.add(16);
-    subTree3.add(12);
-
-    subTree4 = new bst();
-    subTree4.add(2);
-
-    unSubTree1 = new bst();
-    unSubTree1.add(1);
-    unSubTree1.add(2);
-    unSubTree1.add(3);
-
-    unSubTree2 = new bst();
-    unSubTree2.add(5);
-    unSubTree2.add(8);
-    unSubTree2.add(1);
-
-    unSubTree4 = new bst();
-    unSubTree4.add(10);
-    unSubTree4.add(5);
-    unSubTree4.add(15);
+    parentTree = new BinarySearchTree().add(10).add(5).add(15).add(8).add(2).add(12).add(16);
+    subTree2 = new BinarySearchTree().add(5).add(8).add(2);
+    subTree3 = new BinarySearchTree().add(15).add(16).add(12);
+    subTree4 = new BinarySearchTree().add(2);
+    unSubTree1 = new BinarySearchTree().add(1).add(2).add(3);
+    unSubTree2 = new BinarySearchTree().add(5).add(8).add(1);
+    unSubTree4 = new BinarySearchTree().add(10).add(5).add(15);
   });
 
   it('a subtree for the left branch will verify', function () {
