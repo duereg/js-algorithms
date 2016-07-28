@@ -4,37 +4,14 @@ describe('When testing a directed graph, determine if there is a route', () => {
   let graph, a, b, c, d, e, f;
 
   beforeEach(() => {
-    graph = {
-      children: [],
-    };
-    a = {
-      data: 'a',
-      children: [],
-    };
-    b = {
-      data: 'b',
-      children: [],
-    };
-    c = {
-      data: 'c',
-      children: [],
-    };
-    d = {
-      data: 'd',
-      children: [],
-    };
-    e = {
-      data: 'e',
-      children: [],
-    };
-    f = {
-      data: 'f',
-      children: [],
-    };
-    g = {
-      data: 'g',
-      children: [],
-    };
+    graph = { children: [] };
+    a = { data: 'a', children: [] };
+    b = { data: 'b', children: [] };
+    c = { data: 'c', children: [] };
+    d = { data: 'd', children: [] };
+    e = { data: 'e', children: [] };
+    f = { data: 'f', children: [] };
+    g = { data: 'g', children: [] };
 
     // add children to graph
     graph.children.push(a);
