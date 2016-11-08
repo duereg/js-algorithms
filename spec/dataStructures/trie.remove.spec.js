@@ -1,4 +1,4 @@
-const trie = require('../../lib/dataStructures/trie.js');
+const Trie = require('../../lib/dataStructures/trie');
 
 describe('Given a trie containing the word "Philadelphia"', () => {
   let tree;
@@ -6,7 +6,7 @@ describe('Given a trie containing the word "Philadelphia"', () => {
   const testValue2 = 'Phil';
 
   beforeEach(() => {
-    tree = new trie();
+    tree = new Trie();
     tree.add(testValue);
   });
 
@@ -32,7 +32,7 @@ describe('Given a trie containing the words "Philadelphia" and "Phil"', () => {
   const testValue2 = 'Phil';
 
   beforeEach(() => {
-    tree = new trie();
+    tree = new Trie();
     tree.add(testValue);
     tree.add(testValue2);
   });
@@ -70,7 +70,7 @@ describe('Given a trie containing the words "free", "freed", "freedom", and "fre
   const testValue5 = 'freedom';
 
   beforeEach(() => {
-    tree = new trie();
+    tree = new Trie();
     tree.add(testValue1);
     tree.add(testValue2);
     tree.add(testValue3);
@@ -103,7 +103,7 @@ describe('Given a trie containing the words "free", "freed", "freedom", and "fre
 
 describe('When calling trie.remove() with the word undefined', () => {
   it('the remove() method will throw an exception', () => {
-    const tree = new trie();
+    const tree = new Trie();
     expect(tree.remove).toThrow();
   });
 });

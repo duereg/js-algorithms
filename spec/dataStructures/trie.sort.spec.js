@@ -1,4 +1,4 @@
-const trie = require('../../lib/dataStructures/trie.js');
+const Trie = require('../../lib/dataStructures/trie');
 
 describe('Given a trie containing the words "free", "freed", "freedom", and "frees"', () => {
   let tree;
@@ -8,7 +8,7 @@ describe('Given a trie containing the words "free", "freed", "freedom", and "fre
   const testValue5 = 'freedom';
 
   beforeEach(() => {
-    tree = new trie();
+    tree = new Trie();
     tree.add(testValue1);
     tree.add(testValue2);
     tree.add(testValue3);
@@ -30,7 +30,7 @@ describe('Given a trie containing the words "free", "freed", "freedom", and "fre
   });
 });
 
-describe('Given a trie containing the words "apple", "banana", "cherry", and "fejoya"', () => {
+describe('Given a Trie containing the words "apple", "banana", "cherry", and "fejoya"', () => {
   let tree;
   const testValue1 = 'apple';
   const testValue2 = 'banana';
@@ -38,7 +38,7 @@ describe('Given a trie containing the words "apple", "banana", "cherry", and "fe
   const testValue5 = 'fejoya';
 
   beforeEach(() => {
-    tree = new trie();
+    tree = new Trie();
     tree.add(testValue1);
     tree.add(testValue2);
     tree.add(testValue3);
