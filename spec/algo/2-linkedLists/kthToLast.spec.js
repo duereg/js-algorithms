@@ -1,8 +1,9 @@
 const kthToLast = require('../../../lib/algorithms/2-linkedLists/kthToLast.js');
 const LinkedList = require('../../../lib/dataStructures/linkedList.js');
 
-describe('When using kthToLast() on a linked list with 9 items', function () {
-  let nineItems, noDupes;
+describe('When using kthToLast() on a linked list with 9 items', () => {
+  let nineItems,
+    noDupes;
 
   beforeEach(() => {
     nineItems = new LinkedList();
@@ -17,22 +18,22 @@ describe('When using kthToLast() on a linked list with 9 items', function () {
     nineItems.add(9);
   });
 
-  it('given 3, the 3rd to last item will be returned.', function () {
+  it('given 3, the 3rd to last item will be returned.', () => {
     const result = kthToLast(3, nineItems.start);
     expect(result).toBe(7);
   });
 
-  it('given 1, the last item will be returned.', function () {
+  it('given 1, the last item will be returned.', () => {
     const result = kthToLast(1, nineItems.start);
     expect(result).toBe(9);
   });
 
-  it('given 9, the first item will be returned.', function () {
+  it('given 9, the first item will be returned.', () => {
     const result = kthToLast(9, nineItems.start);
     expect(result).toBe(1);
   });
 
-  it('given 10, null will be returned', function () {
+  it('given 10, null will be returned', () => {
     const result = kthToLast(10, nineItems.start);
     expect(result).toBe(null);
   });

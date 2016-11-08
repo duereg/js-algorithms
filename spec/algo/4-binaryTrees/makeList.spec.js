@@ -1,39 +1,39 @@
 const bst = require('../../../lib/dataStructures/binarySearchTree.js');
 const makeList = require('../../../lib/algorithms/4-binaryTrees/makeList.js');
 
-describe('Given a binary search tree, create a linked list at each depth', function () {
+describe('Given a binary search tree, create a linked list at each depth', () => {
   let tree;
 
-  beforeEach(function () {
+  beforeEach(() => {
     tree = new bst();
   });
 
-  it('with a binary search tree of size 1', function () {
+  it('with a binary search tree of size 1', () => {
     tree.add(10);
 
-    let list = makeList(tree.head);
+    const list = makeList(tree.head);
 
     expect(list).not.toBe(null);
     expect(list.data.start.data).toBe(10);
   });
 
-  it('with a tree of size 2', function () {
+  it('with a tree of size 2', () => {
     tree.add(10);
     tree.add(9);
 
-    let list = makeList(tree.head);
+    const list = makeList(tree.head);
 
     expect(list).not.toBe(null);
     expect(list.data.start.data).toBe(10);
     expect(list.next.data.start.data).toBe(9);
   });
 
-  it('with a tree of size 3', function () {
+  it('with a tree of size 3', () => {
     tree.add(9);
     tree.add(10);
     tree.add(8);
 
-    let list = makeList(tree.head);
+    const list = makeList(tree.head);
 
     expect(list).not.toBe(null);
     expect(list.data.start.data).toBe(9);
@@ -42,7 +42,7 @@ describe('Given a binary search tree, create a linked list at each depth', funct
     expect(list.next.data.end.data).toBe(10);
   });
 
-  it('with a tree of size 4', function () {
+  it('with a tree of size 4', () => {
     tree.add(5);
     tree.add(8);
     tree.add(3);
@@ -51,7 +51,7 @@ describe('Given a binary search tree, create a linked list at each depth', funct
     tree.add(6);
     tree.add(9);
 
-    let list = makeList(tree.head);
+    const list = makeList(tree.head);
 
     expect(list).not.toBe(null);
     expect(list.data.start.data).toBe(5);

@@ -1,8 +1,8 @@
 const verifyIsBst = require('../../../lib/algorithms/4-binaryTrees/verifyIsBst.js');
 const bst = require('../../../lib/dataStructures/binarySearchTree.js');
 
-describe('Given a binary tree, determine if the tree is a binary search tree', function () {
-  it('a BST will verify correctly', function () {
+describe('Given a binary tree, determine if the tree is a binary search tree', () => {
+  it('a BST will verify correctly', () => {
     let balanced;
     balanced = new bst();
     balanced.add(10);
@@ -15,8 +15,8 @@ describe('Given a binary tree, determine if the tree is a binary search tree', f
     expect(verifyIsBst(balanced.head)).toBe(true);
   });
 
-  it('a non-BST will not verify correctly', function () {
-    let unbalanced = new bst();
+  it('a non-BST will not verify correctly', () => {
+    const unbalanced = new bst();
     unbalanced.add(10);
     unbalanced.add(1);
     unbalanced.add(20);

@@ -1,62 +1,62 @@
 const LinkedList = require('../../lib/dataStructures/linkedList.js');
 
-describe('When adding one element to a linked list', function () {
+describe('When adding one element to a linked list', () => {
   let list;
-  let testValue = 'test_string';
+  const testValue = 'test_string';
 
-  beforeEach(function () {
+  beforeEach(() => {
     list = new LinkedList();
     list.add(testValue);
   });
 
-  afterEach(function () {
+  afterEach(() => {
     list = null;
   });
 
-  it('the lists length should increase by 1', function () {
+  it('the lists length should increase by 1', () => {
     expect(list.length).toBe(1);
   });
 
-  it('the start element should contain the added value.', function () {
+  it('the start element should contain the added value.', () => {
     expect(list.start.data).toBe(testValue);
   });
 
-  it('the end element should contain the added value.', function () {
+  it('the end element should contain the added value.', () => {
     expect(list.end.data).toBe(testValue);
   });
 
-  it('the start next pointer should be null.', function () {
+  it('the start next pointer should be null.', () => {
     expect(list.start.next).toBe(null);
   });
 
-  it('the end next pointer should be null.', function () {
+  it('the end next pointer should be null.', () => {
     expect(list.end.next).toBe(null);
   });
 });
 
-describe('When the list contains one element and your remove it', function () {
+describe('When the list contains one element and your remove it', () => {
   let list;
-  let testValue = 'test_string';
+  const testValue = 'test_string';
 
-  beforeEach(function () {
+  beforeEach(() => {
     list = new LinkedList();
     list.add(testValue);
     list.remove(testValue);
   });
 
-  afterEach(function () {
+  afterEach(() => {
     list = null;
   });
 
-  it('the lists length should be zero', function () {
+  it('the lists length should be zero', () => {
     expect(list.length).toBe(0);
   });
 
-  it('the start element should be null', function () {
+  it('the start element should be null', () => {
     expect(list.start).toBe(null);
   });
 
-  it('the end element should be null', function () {
+  it('the end element should be null', () => {
     expect(list.end).toBe(null);
   });
 });

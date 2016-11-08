@@ -1,7 +1,13 @@
 const isRoute = require('../../../lib/algorithms/4-binaryTrees/isRoute.js');
 
 describe('When testing a directed graph, determine if there is a route', () => {
-  let graph, a, b, c, d, e, f;
+  let graph,
+    a,
+    b,
+    c,
+    d,
+    e,
+    f;
 
   beforeEach(() => {
     graph = { children: [] };

@@ -2,7 +2,9 @@ const towerOfHanoi = require('../../../lib/algorithms/3-stacks/hanoi.js');
 const stack = require('../../../lib/dataStructures/stack.js');
 
 describe('When dealing with the Tower of Hanoi', () => {
-  let target, helper, source;
+  let target,
+    helper,
+    source;
 
   beforeEach(() => {
     target = new stack();
@@ -67,8 +69,9 @@ describe('When dealing with the Tower of Hanoi', () => {
   });
 
   function test(number) {
-    for (var i = number; i > 0; i--)
+    for (let i = number; i > 0; i--) {
       source.push(i);
+    }
 
     towerOfHanoi(source, helper, target);
   }

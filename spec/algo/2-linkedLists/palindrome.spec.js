@@ -1,8 +1,10 @@
 const palindrome = require('../../../lib/algorithms/2-linkedLists/palindrome.js');
 const LinkedList = require('../../../lib/dataStructures/linkedList.js');
 
-describe('When using palindrome() on a linked list of integers', function () {
-  let validEven, validOdd, invalid;
+describe('When using palindrome() on a linked list of integers', () => {
+  let validEven,
+    validOdd,
+    invalid;
 
   beforeEach(() => {
     validEven = new LinkedList();
@@ -33,17 +35,17 @@ describe('When using palindrome() on a linked list of integers', function () {
     invalid.add(6);
   });
 
-  it('given an even number valid palindrome, true will be returned.', function () {
+  it('given an even number valid palindrome, true will be returned.', () => {
     const result = palindrome(validEven.start);
     expect(result).toBe(true);
   });
 
-  it('given an odd number valid palindrome, true will be returned.', function () {
+  it('given an odd number valid palindrome, true will be returned.', () => {
     const result = palindrome(validOdd.start);
     expect(result).toBe(true);
   });
 
-  it('given an invalid palindrome, false will be returned.', function () {
+  it('given an invalid palindrome, false will be returned.', () => {
     const result = palindrome(invalid.start);
     expect(result).toBe(false);
   });

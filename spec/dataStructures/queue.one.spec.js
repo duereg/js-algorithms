@@ -1,32 +1,32 @@
 const Queue = require('../../lib/dataStructures/queue.js');
 
-describe('When adding an element onto a Queue', function () {
+describe('When adding an element onto a Queue', () => {
   let myQueue;
-  let firstValue = 1;
+  const firstValue = 1;
 
-  beforeEach(function () {
+  beforeEach(() => {
     myQueue = new Queue();
     myQueue.add(firstValue);
   });
 
-  it('the Queues` length should be 1', function () {
+  it('the Queues` length should be 1', () => {
     expect(myQueue.length).toBe(1);
   });
 
-  it('peek should show the item', function () {
+  it('peek should show the item', () => {
     expect(myQueue.peek()).toBe(firstValue);
   });
 
-  describe('you remove an element', function () {
-    beforeEach(function () {
+  describe('you remove an element', () => {
+    beforeEach(() => {
       myQueue.remove(firstValue);
     });
 
-    it('the Queue`s length should be zero', function () {
+    it('the Queue`s length should be zero', () => {
       expect(myQueue.length).toBe(0);
     });
 
-    it('peek should be null', function () {
+    it('peek should be null', () => {
       expect(myQueue.peek()).toBe(null);
     });
   });

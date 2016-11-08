@@ -1,8 +1,9 @@
 const deDupe = require('../../../lib/algorithms/2-linkedLists/deDupe.recursive.js');
 const LinkedList = require('../../../lib/dataStructures/linkedList.js');
 
-describe('When using the recursive deDupe() on a linked list of integers', function () {
-  let containsDupes, noDupes;
+describe('When using the recursive deDupe() on a linked list of integers', () => {
+  let containsDupes,
+    noDupes;
 
   beforeEach(() => {
     containsDupes = new LinkedList();
@@ -27,12 +28,12 @@ describe('When using the recursive deDupe() on a linked list of integers', funct
     noDupes.add(6);
   });
 
-  it('any duplicate elements will be removed from the linked list.', function () {
+  it('any duplicate elements will be removed from the linked list.', () => {
     const result = deDupe(containsDupes.start);
     expect(JSON.stringify(result)).toEqual(JSON.stringify(noDupes.start));
   });
 
-  it('if there are no dups, nothing will happen', function () {
+  it('if there are no dups, nothing will happen', () => {
     const result = deDupe(noDupes.start);
     expect(JSON.stringify(result)).toEqual(JSON.stringify(noDupes.start));
   });

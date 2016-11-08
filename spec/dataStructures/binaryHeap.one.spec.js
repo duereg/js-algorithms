@@ -1,23 +1,23 @@
 const binaryHeap = require('../../lib/dataStructures/binaryHeap.js');
 
-describe('When adding one element to the binary heap', function () {
+describe('When adding one element to the binary heap', () => {
   let list;
-  let testValue = 'test_string';
+  const testValue = 'test_string';
 
-  beforeEach(function () {
+  beforeEach(() => {
     list = new binaryHeap();
     list.add(testValue);
   });
 
-  afterEach(function () {
+  afterEach(() => {
     list = null;
   });
 
-  it('the binary heaps length should increase by 1', function () {
+  it('the binary heaps length should increase by 1', () => {
     expect(list.array.length).toBe(1);
   });
 
-  it('the 1st element of the binary heap should contain the added value.', function () {
+  it('the 1st element of the binary heap should contain the added value.', () => {
     expect(list.array[0]).toBe(testValue);
   });
 });

@@ -1,31 +1,31 @@
 const bst = require('../../lib/dataStructures/binarySearchTree.js');
 
-describe('When adding an element to a binary search tree', function () {
+describe('When adding an element to a binary search tree', () => {
   let tree;
-  let value = 2;
+  const value = 2;
 
-  beforeEach(function () {
+  beforeEach(() => {
     tree = new bst();
     tree.add(value);
   });
 
-  it('the 1st element of the binary search tree should contain the value.', function () {
+  it('the 1st element of the binary search tree should contain the value.', () => {
     expect(tree.head.data).toBe(value);
   });
 });
 
 
-describe('When adding three elements to a binary search tree', function () {
+describe('When adding three elements to a binary search tree', () => {
   let tree;
-  let value2 = 2;
-  let value1 = 1;
-  let value3 = 3;
+  const value2 = 2;
+  const value1 = 1;
+  const value3 = 3;
 
-  beforeEach(function () {
+  beforeEach(() => {
     tree = new bst();
   });
 
-  it('if the elements are added in order (middle, least, greatest) the tree will be balanced.', function () {
+  it('if the elements are added in order (middle, least, greatest) the tree will be balanced.', () => {
     tree.add(value2);
     tree.add(value1);
     tree.add(value3);
@@ -35,7 +35,7 @@ describe('When adding three elements to a binary search tree', function () {
     expect(tree.head.right.data).toBe(value3);
   });
 
-  it('if the elements are added in order (least, middle, greatest) the tree will only have right nodes.', function () {
+  it('if the elements are added in order (least, middle, greatest) the tree will only have right nodes.', () => {
     tree.add(value1);
     tree.add(value2);
     tree.add(value3);
@@ -45,7 +45,7 @@ describe('When adding three elements to a binary search tree', function () {
     expect(tree.head.right.right.data).toBe(value3);
   });
 
-  it('if the elements are added in order (greatest, middle, least) the tree will only have left nodes.', function () {
+  it('if the elements are added in order (greatest, middle, least) the tree will only have left nodes.', () => {
     tree.add(value3);
     tree.add(value2);
     tree.add(value1);

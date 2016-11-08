@@ -2,7 +2,9 @@ const partition = require('../../../lib/algorithms/2-linkedLists/partition.js');
 const LinkedList = require('../../../lib/dataStructures/linkedList.js');
 
 describe('When using partition(10) on a linked list of integers', () => {
-  let list, noDupes, number = 10;
+  let list,
+    noDupes,
+    number = 10;
 
   beforeEach(() => {
     list = new LinkedList();
@@ -19,9 +21,9 @@ describe('When using partition(10) on a linked list of integers', () => {
     list.add(69);
   });
 
-  it('all the numbers under ' + number + ' will be before numbers greater than ' + number, () => {
-    var result = partition(list.start, number);
-    var lessThanX = 0;
+  it(`all the numbers under ${number} will be before numbers greater than ${number}`, () => {
+    let result = partition(list.start, number);
+    let lessThanX = 0;
 
     while (result != null) {
       if (lessThanX < 6) {

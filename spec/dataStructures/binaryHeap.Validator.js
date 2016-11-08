@@ -10,22 +10,22 @@ validate.prototype.isValid = function (parent, length) {
   }
 
   if (parent < length) {
-    var left = this.heap.getLeftChild(parent);
-    var right = this.heap.getRightChild(parent);
-    var isValid = true;
+    const left = this.heap.getLeftChild(parent);
+    const right = this.heap.getRightChild(parent);
+    let isValid = true;
 
     if (left < length) {
-      if (this.heap.shouldSwap(this.heap.array[left], this.heap.array[parent]))
+      if (this.heap.shouldSwap(this.heap.array[left], this.heap.array[parent])) {
         return false;
-      else
+      } else {
         return isValid = isValid && this.isValid(left, length);
+      }
     }
 
     if (right < length) {
-      if (this.heap.shouldSwap(this.heap.array[right], this.heap.array[parent]))
+      if (this.heap.shouldSwap(this.heap.array[right], this.heap.array[parent])) {
         return false;
-      else
-        return isValid = isValid && this.isValid(right, length);
+      } else { return isValid = isValid && this.isValid(right, length); }
     }
 
     return isValid;

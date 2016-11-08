@@ -1,13 +1,13 @@
 const trie = require('../../lib/dataStructures/trie.js');
 
-describe('Given a trie containing the words "free", "freed", "freedom", and "frees"', function () {
+describe('Given a trie containing the words "free", "freed", "freedom", and "frees"', () => {
   let tree;
-  let testValue1 = 'free';
-  let testValue2 = 'freed';
-  let testValue3 = 'frees';
-  let testValue5 = 'freedom';
+  const testValue1 = 'free';
+  const testValue2 = 'freed';
+  const testValue3 = 'frees';
+  const testValue5 = 'freedom';
 
-  beforeEach(function () {
+  beforeEach(() => {
     tree = new trie();
     tree.add(testValue1);
     tree.add(testValue2);
@@ -15,12 +15,12 @@ describe('Given a trie containing the words "free", "freed", "freedom", and "fre
     tree.add(testValue5);
   });
 
-  afterEach(function () {
+  afterEach(() => {
     tree = null;
   });
 
-  it('the sort() method will return a sorted list of strings in the correct order', function () {
-    let sorted = tree.sort();
+  it('the sort() method will return a sorted list of strings in the correct order', () => {
+    const sorted = tree.sort();
 
     expect(sorted.length).toBe(4);
     expect(sorted[0]).toBe(testValue1);
@@ -30,14 +30,14 @@ describe('Given a trie containing the words "free", "freed", "freedom", and "fre
   });
 });
 
-describe('Given a trie containing the words "apple", "banana", "cherry", and "fejoya"', function () {
+describe('Given a trie containing the words "apple", "banana", "cherry", and "fejoya"', () => {
   let tree;
-  let testValue1 = 'apple';
-  let testValue2 = 'banana';
-  let testValue3 = 'cherry';
-  let testValue5 = 'fejoya';
+  const testValue1 = 'apple';
+  const testValue2 = 'banana';
+  const testValue3 = 'cherry';
+  const testValue5 = 'fejoya';
 
-  beforeEach(function () {
+  beforeEach(() => {
     tree = new trie();
     tree.add(testValue1);
     tree.add(testValue2);
@@ -45,12 +45,12 @@ describe('Given a trie containing the words "apple", "banana", "cherry", and "fe
     tree.add(testValue5);
   });
 
-  afterEach(function () {
+  afterEach(() => {
     tree = null;
   });
 
-  it('the sort() method will return a sorted list of strings in the correct order', function () {
-    let sorted = tree.sort();
+  it('the sort() method will return a sorted list of strings in the correct order', () => {
+    const sorted = tree.sort();
 
     expect(sorted.length).toBe(4);
     expect(sorted[0]).toBe(testValue1);

@@ -37,12 +37,12 @@ function print(value) {
   }
 }
 
-describe('Given a binary tree and a value, print every path that sums to that number', function () {
-  beforeEach(function () {
+describe('Given a binary tree and a value, print every path that sums to that number', () => {
+  beforeEach(() => {
     callsToPrint = 0;
   });
 
-  it('print() should be called 6 times', function () {
+  it('print() should be called 6 times', () => {
     printSum(withSum, sum, print);
     expect(callsToPrint).toEqual(6);
   });

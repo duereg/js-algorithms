@@ -2,19 +2,19 @@ const maxHeap = require('../../lib/dataStructures/maxHeap.js');
 
 const testValue = 'test_string';
 
-describe('When adding one element to the max heap', function () {
+describe('When adding one element to the max heap', () => {
   let list;
 
-  beforeEach(function () {
+  beforeEach(() => {
     list = new maxHeap();
     list.add(testValue);
   });
 
-  it('the maxHeap length should increase by 1', function () {
+  it('the maxHeap length should increase by 1', () => {
     expect(list.array.length).toBe(1);
   });
 
-  it('the 1st element of the maxHeap should contain the added value.', function () {
+  it('the 1st element of the maxHeap should contain the added value.', () => {
     expect(list.array[0]).toBe(testValue);
   });
 });

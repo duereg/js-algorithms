@@ -1,10 +1,10 @@
 const depthFirstSearch = require('../../../lib/algorithms/4-searching/depthFirstSearch.js');
 const bst = require('../../../lib/dataStructures/binarySearchTree.js');
 
-describe('Given a binary tree containing the value 8, determine if the depth first search', function () {
+describe('Given a binary tree containing the value 8, determine if the depth first search', () => {
   let balanced;
 
-  beforeEach(function () {
+  beforeEach(() => {
     balanced = new bst();
     balanced.add(10);
     balanced.add(5);
@@ -15,20 +15,20 @@ describe('Given a binary tree containing the value 8, determine if the depth fir
     balanced.add(16);
   });
 
-  it('can find the value 8 in the tree', function () {
-    expect(depthFirstSearch(balanced.head, function (value) {
-      return value === 8;
-    })).toBe(true);
+  it('can find the value 8 in the tree', () => {
+    expect(depthFirstSearch(balanced.head, value =>
+       value === 8
+    )).toBe(true);
   });
 
-  it('cannot find the value 11', function () {
-    expect(depthFirstSearch(balanced.head, function (value) {
-      return value === 11;
-    })).toBe(false);
+  it('cannot find the value 11', () => {
+    expect(depthFirstSearch(balanced.head, value =>
+       value === 11
+    )).toBe(false);
   });
 
-  it('the order of search is correct', function () {
-    let matcher = {
+  it('the order of search is correct', () => {
+    const matcher = {
 
       matcher(value) {
         return value === 8;
