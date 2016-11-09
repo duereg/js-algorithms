@@ -1,5 +1,5 @@
-const palindrome = require('../../../lib/algorithms/2-linkedLists/palindrome.js');
-const LinkedList = require('../../../lib/dataStructures/linkedList.js');
+const palindrome = require('../../../lib/algorithms/2-linkedLists/palindrome');
+const LinkedList = require('../../../lib/dataStructures/linkedList');
 
 describe('When using palindrome() on a linked list of integers', () => {
   let validEven,

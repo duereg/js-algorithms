@@ -1,4 +1,4 @@
-const LinkedList = require('../../lib/dataStructures/linkedList.js');
+const LinkedList = require('../../lib/dataStructures/linkedList');
 
 const testValue1 = 'test_string1';
 const testValue2 = 'test_string2';

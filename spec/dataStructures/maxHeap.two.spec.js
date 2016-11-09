@@ -1,4 +1,4 @@
-const maxHeap = require('../../lib/dataStructures/maxHeap.js');
+const maxHeap = require('../../lib/dataStructures/maxHeap');
 
 describe('When adding two elements to the max heap', () => {
   let list;

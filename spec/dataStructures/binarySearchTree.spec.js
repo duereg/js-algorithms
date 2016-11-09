@@ -1,4 +1,4 @@
-const bst = require('../../lib/dataStructures/binarySearchTree.js');
+const bst = require('../../lib/dataStructures/binarySearchTree');
 
 describe('When adding an element to a binary search tree', () => {
   let tree;

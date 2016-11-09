@@ -1,4 +1,4 @@
-const minHeap = require('../../lib/dataStructures/minHeap.js');
+const minHeap = require('../../lib/dataStructures/minHeap');
 
 const testValue = 'test_string';
 

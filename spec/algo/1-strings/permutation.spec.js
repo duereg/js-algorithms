@@ -1,4 +1,4 @@
-const isPermutation = require('../../../lib/algorithms/1-strings/permutation.js');
+const isPermutation = require('../../../lib/algorithms/1-strings/permutation');
 
 const testValue1 = 'test_string_is_so_great';
 const testValue2 = '_t_greing_tssoatestris_';

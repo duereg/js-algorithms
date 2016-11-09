@@ -1,4 +1,4 @@
-const stack = require('../../lib/dataStructures/stack.js');
+const stack = require('../../lib/dataStructures/stack');
 
 const testValue1 = 'test_string1';
 const testValue2 = 'test_string2';

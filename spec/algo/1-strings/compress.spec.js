@@ -1,4 +1,4 @@
-const compress = require('../../../lib/algorithms/1-strings/compress.js');
+const compress = require('../../../lib/algorithms/1-strings/compress');
 
 const preCompress1 = 'aaabbbccccddeeeee';
 const postCompress1 = 'a3b3c4d2e5';

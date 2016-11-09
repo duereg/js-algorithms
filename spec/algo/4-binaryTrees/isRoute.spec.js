@@ -1,4 +1,4 @@
-const isRoute = require('../../../lib/algorithms/4-binaryTrees/isRoute.js');
+const isRoute = require('../../../lib/algorithms/4-binaryTrees/isRoute');
 
 describe('When testing a directed graph, determine if there is a route', () => {
   let graph,

@@ -1,5 +1,5 @@
-const depthFirstSearch = require('../../../lib/algorithms/4-searching/depthFirstSearch.js');
-const bst = require('../../../lib/dataStructures/binarySearchTree.js');
+const depthFirstSearch = require('../../../lib/algorithms/4-searching/depthFirstSearch');
+const bst = require('../../../lib/dataStructures/binarySearchTree');
 
 describe('Given a binary tree containing the value 8, determine if the depth first search', () => {
   let balanced;

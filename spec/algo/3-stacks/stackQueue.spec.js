@@ -1,5 +1,5 @@
-const stackQueue = require('../../../lib/algorithms/3-stacks/stackQueue.js');
-const stack = require('../../../lib/dataStructures/stack.js');
+const stackQueue = require('../../../lib/algorithms/3-stacks/stackQueue');
+const stack = require('../../../lib/dataStructures/stack');
 
 describe('When dealing with a Queue comprised of two stacks', () => {
   let queue;

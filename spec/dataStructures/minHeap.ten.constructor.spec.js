@@ -1,5 +1,5 @@
-const minHeap = require('../../lib/dataStructures/minHeap.js');
-const heapValidator = require('./binaryHeap.Validator.js');
+const minHeap = require('../../lib/dataStructures/minHeap');
+const heapValidator = require('./binaryHeap.Validator');
 
 describe('When adding ten elements to the min heap via constructor', () => {
   let array,

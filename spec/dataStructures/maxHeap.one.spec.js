@@ -1,4 +1,4 @@
-const maxHeap = require('../../lib/dataStructures/maxHeap.js');
+const maxHeap = require('../../lib/dataStructures/maxHeap');
 
 const testValue = 'test_string';
 

@@ -1,4 +1,4 @@
-const Queue = require('../../lib/dataStructures/queue.js');
+const Queue = require('../../lib/dataStructures/queue');
 
 const testValue1 = 'test_string1';
 const testValue2 = 'test_string2';

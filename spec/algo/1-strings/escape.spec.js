@@ -1,4 +1,4 @@
-const escape = require('../../../lib/algorithms/1-strings/escape.js');
+const escape = require('../../../lib/algorithms/1-strings/escape');
 
 const preEscape = 'A beautiful test string      ';
 const postEscape = 'A%20beautiful%20test%20string';

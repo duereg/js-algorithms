@@ -1,5 +1,5 @@
-const kthToLast = require('../../../lib/algorithms/2-linkedLists/kthToLast.js');
-const LinkedList = require('../../../lib/dataStructures/linkedList.js');
+const kthToLast = require('../../../lib/algorithms/2-linkedLists/kthToLast');
+const LinkedList = require('../../../lib/dataStructures/linkedList');
 
 describe('When using kthToLast() on a linked list with 9 items', () => {
   let nineItems,

@@ -1,5 +1,5 @@
-const sort = require('../../../lib/algorithms/3-stacks/sort.js');
-const stack = require('../../../lib/dataStructures/stack.js');
+const sort = require('../../../lib/algorithms/3-stacks/sort');
+const stack = require('../../../lib/dataStructures/stack');
 
 describe('When sorting a stack, using only stacks', () => {
   let unsorted;

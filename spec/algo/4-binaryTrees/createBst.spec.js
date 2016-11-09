@@ -1,4 +1,4 @@
-const createBst = require('../../../lib/algorithms/4-binaryTrees/createBst.js');
+const createBst = require('../../../lib/algorithms/4-binaryTrees/createBst');
 
 describe('Given an array sorted in ascending order, create a binary search tree', () => {
   let array;

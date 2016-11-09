@@ -1,5 +1,5 @@
-const printSum = require('../../../lib/algorithms/4-binaryTrees/printSum.js');
-const bst = require('../../../lib/dataStructures/binarySearchTree.js');
+const printSum = require('../../../lib/algorithms/4-binaryTrees/printSum');
+const bst = require('../../../lib/dataStructures/binarySearchTree');
 
 const sum = 6;
 const withSum = {

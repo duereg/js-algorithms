@@ -1,4 +1,4 @@
-const binaryHeap = require('../../lib/dataStructures/binaryHeap.js');
+const binaryHeap = require('../../lib/dataStructures/binaryHeap');
 
 describe('When adding one element to the binary heap', () => {
   let list;

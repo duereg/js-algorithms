@@ -1,4 +1,4 @@
-const mergeSort = require('../../../lib/algorithms/11-sorting/mergeSort.js');
+const mergeSort = require('../../../lib/algorithms/11-sorting/mergeSort');
 
 describe('When using MergeSort on an unsorted Array', () => {
   let unsortedLength,

@@ -1,4 +1,4 @@
-const LinkedList = require('../../lib/dataStructures/linkedList.js');
+const LinkedList = require('../../lib/dataStructures/linkedList');
 
 describe('When adding one element to a linked list', () => {
   let list;

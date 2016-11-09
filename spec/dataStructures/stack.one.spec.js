@@ -1,4 +1,4 @@
-const stack = require('../../lib/dataStructures/stack.js');
+const stack = require('../../lib/dataStructures/stack');
 
 const firstValue = 1;
 

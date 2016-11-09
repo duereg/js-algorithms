@@ -1,5 +1,5 @@
-const deDupe = require('../../../lib/algorithms/2-linkedLists/deDupe.js');
-const LinkedList = require('../../../lib/dataStructures/linkedList.js');
+const deDupe = require('../../../lib/algorithms/2-linkedLists/deDupe');
+const LinkedList = require('../../../lib/dataStructures/linkedList');
 
 describe('When using deDupe() on a linked list of integers', () => {
   let containsDupes,

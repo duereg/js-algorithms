@@ -1,5 +1,5 @@
-const towerOfHanoi = require('../../../lib/algorithms/3-stacks/hanoi.js');
-const stack = require('../../../lib/dataStructures/stack.js');
+const towerOfHanoi = require('../../../lib/algorithms/3-stacks/hanoi');
+const stack = require('../../../lib/dataStructures/stack');
 
 describe('When dealing with the Tower of Hanoi', () => {
   let target,
