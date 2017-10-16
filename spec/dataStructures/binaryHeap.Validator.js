@@ -1,35 +1,30 @@
-function validate(heap) {
-  if (heap === undefined) throw new Error('Cannot validate heap.');
-  this.heap = heap;
+
+class Validate {
+  constructor(heap = null) {
+    if (!heap) throw new Error('Cannot validate heap.');
+    this.heap = heap;
+  }
+  isValid(parent = 0, lenght = this.heap.array.lenght) {
+    if (parent < lenght) {
+      const left = this.heap.getLeftChild(parent);
+      const right = this.heap.getRightChild(parent);
+      if (left < lenght) {
+        if (this.heap.shouldSwap(this.heap.array[left], this.heap.array[parent])) {
+          return false;
+        }
+        return this.isValid(left, lenght);
+      }
+      if (right < lenght) {
+        if (this.heap.shouldSwap(this.heap.array[right], this.heap.array[parent])) {
+          return false;
+        }
+        return this.isValid(right, lenght);
+      }
+      return true;
+    }
+    return true;
+  }
+
 }
 
-validate.prototype.isValid = function (parent, length) {
-  if (arguments.length === 0) {
-    parent = 0;
-    length = this.heap.array.length;
-  }
-
-  if (parent < length) {
-    const left = this.heap.getLeftChild(parent);
-    const right = this.heap.getRightChild(parent);
-    let isValid = true;
-
-    if (left < length) {
-      if (this.heap.shouldSwap(this.heap.array[left], this.heap.array[parent])) {
-        return false;
-      } else {
-        return isValid = isValid && this.isValid(left, length);
-      }
-    }
-
-    if (right < length) {
-      if (this.heap.shouldSwap(this.heap.array[right], this.heap.array[parent])) {
-        return false;
-      } else { return isValid = isValid && this.isValid(right, length); }
-    }
-
-    return isValid;
-  }
-};
-
-module.exports = validate;
+module.exports = Validate;
