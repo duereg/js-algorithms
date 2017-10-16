@@ -1,11 +1,11 @@
-const bst = require('../../lib/dataStructures/binarySearchTree');
+const Bst = require('../../lib/dataStructures/binarySearchTree');
 
 describe('When adding an element to a binary search tree', () => {
   let tree;
   const value = 2;
 
   beforeEach(() => {
-    tree = new bst();
+    tree = new Bst();
     tree.add(value);
   });
 
@@ -22,7 +22,7 @@ describe('When adding three elements to a binary search tree', () => {
   const value3 = 3;
 
   beforeEach(() => {
-    tree = new bst();
+    tree = new Bst();
   });
 
   it('if the elements are added in order (middle, least, greatest) the tree will be balanced.', () => {
