@@ -1,5 +1,6 @@
+/* eslint max-len: ["error", 120] */
 const isBalanced = require('../../../lib/algorithms/4-binaryTrees/isBalanced');
-const bst = require('../../../lib/dataStructures/binarySearchTree');
+const Bst = require('../../../lib/dataStructures/binarySearchTree');
 
 describe('When testing a binary search tree using isBalanced()', () => {
   let tree;
@@ -8,14 +9,13 @@ describe('When testing a binary search tree using isBalanced()', () => {
   const value3 = 3;
 
   beforeEach(() => {
-    tree = new bst();
+    tree = new Bst();
   });
 
   it('if three elements are added in order (middle, least, greatest) the tree will be balanced.', () => {
     tree.add(value2);
     tree.add(value1);
     tree.add(value3);
-
     expect(isBalanced(tree.head)).toBe(true);
   });
 
