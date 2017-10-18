@@ -25,7 +25,7 @@ describe('When test the concrete class black jack hand ', () => {
     expect(hand.is21()).toEqual(false);
   });
 
-  it('the blackjackHand check is boosted', () => {
+  it('the blackjackHand  is busted', () => {
     hand
         .addCard(new BlackjackCard().setSuit('Spades').setValue('Ace'))
         .addCard(new BlackjackCard().setSuit('Hearts').setValue('Two'))
@@ -34,7 +34,7 @@ describe('When test the concrete class black jack hand ', () => {
     expect(hand.isBusted()).toEqual(true);
   });
 
-  it('the blackjackHand check is 21', () => {
+  it('the blackjackHand is 21', () => {
     hand
         .addCard(new BlackjackCard().setSuit('Spades').setValue('Ace'))
         .addCard(new BlackjackCard().setSuit('Hearts').setValue('Jack'));
