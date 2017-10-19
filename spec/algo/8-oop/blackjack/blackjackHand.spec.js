@@ -43,4 +43,17 @@ describe('When test the concrete class black jack hand ', () => {
     expect(hand.is21()).toEqual(true);
   });
 
+  it('Check error if don\'t have any card', () => {
+    try {
+      hand.isBusted();
+    } catch (e) {
+      expect(e.message).toEqual('Should get some card at hand first');
+    }
+
+    try {
+      hand.is21();
+    } catch (e) {
+      expect(e.message).toEqual('Should get some card at hand first');
+    }
+  });
 });
