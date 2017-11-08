@@ -1,11 +1,11 @@
-const binaryHeap = require('../../lib/dataStructures/binaryHeap');
+const BinaryHeap = require('../../lib/dataStructures/binaryHeap');
 
 describe('When adding one element to the binary heap', () => {
   let list;
   const testValue = 'test_string';
 
   beforeEach(() => {
-    list = new binaryHeap();
+    list = new BinaryHeap();
     list.add(testValue);
   });
 

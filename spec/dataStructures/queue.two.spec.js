@@ -8,8 +8,9 @@ describe('When adding two elements to a Queue', () => {
 
   beforeEach(() => {
     myQueue = new Queue();
-    myQueue.add(testValue1);
-    myQueue.add(testValue2);
+    myQueue
+    .push(testValue1)
+    .push(testValue2);
   });
 
   it('the Queue`s length should be 2', () => {
@@ -20,7 +21,7 @@ describe('When adding two elements to a Queue', () => {
     let result;
 
     beforeEach(() => {
-      result = myQueue.remove();
+      result = myQueue.pop();
     });
 
     it('the Queue`s length should be 1', () => {
@@ -37,8 +38,8 @@ describe('When adding two elements to a Queue', () => {
       result2;
 
     beforeEach(() => {
-      result1 = myQueue.remove();
-      result2 = myQueue.remove();
+      result1 = myQueue.pop();
+      result2 = myQueue.pop();
     });
 
     it('the Queue`s length should be 0', () => {
