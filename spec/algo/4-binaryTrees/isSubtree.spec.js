@@ -11,13 +11,35 @@ describe('Given two binary trees, determine if one tree is a subtree of the othe
     unSubTree4;
 
   beforeEach(() => {
-    parentTree = new BinarySearchTree().add(10).add(5).add(15).add(8).add(2).add(12).add(16);
-    subTree2 = new BinarySearchTree().add(5).add(8).add(2);
-    subTree3 = new BinarySearchTree().add(15).add(16).add(12);
+    parentTree = new BinarySearchTree()
+      .add(10)
+      .add(5)
+      .add(15)
+      .add(8)
+      .add(2)
+      .add(12)
+      .add(16);
+    subTree2 = new BinarySearchTree()
+      .add(5)
+      .add(8)
+      .add(2);
+    subTree3 = new BinarySearchTree()
+      .add(15)
+      .add(16)
+      .add(12);
     subTree4 = new BinarySearchTree().add(2);
-    unSubTree1 = new BinarySearchTree().add(1).add(2).add(3);
-    unSubTree2 = new BinarySearchTree().add(5).add(8).add(1);
-    unSubTree4 = new BinarySearchTree().add(10).add(5).add(15);
+    unSubTree1 = new BinarySearchTree()
+      .add(1)
+      .add(2)
+      .add(3);
+    unSubTree2 = new BinarySearchTree()
+      .add(5)
+      .add(8)
+      .add(1);
+    unSubTree4 = new BinarySearchTree()
+    .add(10)
+    .add(5)
+    .add(15);
   });
 
   it('a subtree for the left branch will verify', () => {

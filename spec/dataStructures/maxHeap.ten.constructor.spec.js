@@ -1,5 +1,5 @@
-const maxHeap = require('../../lib/dataStructures/maxHeap');
-const heapValidator = require('./binaryHeap.Validator');
+const MaxHeap = require('../../lib/dataStructures/maxHeap');
+const HeapValidator = require('./binaryHeap.Validator');
 
 describe('When adding ten elements to the max heap via constructor', () => {
   let array,
@@ -18,7 +18,7 @@ describe('When adding ten elements to the max heap via constructor', () => {
     array.push(50);
     array.push(60);
 
-    list = new maxHeap(array);
+    list = new MaxHeap(array);
   });
 
   it('the maxHeap length should by 10', () => {
@@ -39,7 +39,7 @@ describe('When adding ten elements to the max heap via constructor', () => {
   });
 
   it('the max heap is valid', () => {
-    const validator = new heapValidator(list);
+    const validator = new HeapValidator(list);
     expect(validator.isValid()).toBe(true);
   });
 
