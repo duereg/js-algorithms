@@ -53,7 +53,7 @@ As well as the following algorithms:
 * Shuffle (Fisher–Yates)
 * Smallest Enclosing Circle
 
-##Usage
+## Usage
 
 If you want access to these data structures in your project, include this package.
 
