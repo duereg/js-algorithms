@@ -5,11 +5,11 @@
   "main": "index.js",
   "repository": "git@github.com:duereg/js-algorithms.git",
   "devDependencies": {
-    "eslint": "^2.13.1",
-    "eslint-config-airbnb": "^9.0.1",
-    "eslint-plugin-import": "^1.12.0",
-    "eslint-plugin-jsx-a11y": "^1.5.5",
-    "eslint-plugin-react": "^5.2.2",
+    "eslint": "^4.10.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
     "jasmine-node": "~2.0.0"
   },
   "author": {
@@ -18,7 +18,8 @@
     "url": "http://blog.mattblair.co"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=4",
+    "npm": ">=5"
   },
   "maintainers": [
     {
