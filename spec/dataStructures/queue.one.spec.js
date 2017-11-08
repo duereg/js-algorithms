@@ -6,7 +6,7 @@ describe('When adding an element onto a Queue', () => {
 
   beforeEach(() => {
     myQueue = new Queue();
-    myQueue.add(firstValue);
+    myQueue.push(firstValue);
   });
 
   it('the Queues` length should be 1', () => {
@@ -19,7 +19,7 @@ describe('When adding an element onto a Queue', () => {
 
   describe('you remove an element', () => {
     beforeEach(() => {
-      myQueue.remove(firstValue);
+      myQueue.pop(firstValue);
     });
 
     it('the Queue`s length should be zero', () => {
