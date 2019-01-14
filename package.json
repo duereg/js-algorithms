@@ -30,6 +30,7 @@
   ],
   "scripts": {
     "pretest": "npm install",
-    "test": "jasmine-node spec"
+    "test": "jasmine-node spec",
+    "lint": "eslint ./ --fix"
   }
 }
