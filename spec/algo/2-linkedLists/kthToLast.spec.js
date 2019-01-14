@@ -2,8 +2,7 @@ const kthToLast = require('../../../lib/algorithms/2-linkedLists/kthToLast');
 const LinkedList = require('../../../lib/dataStructures/linkedList');
 
 describe('When using kthToLast() on a linked list with 9 items', () => {
-  let nineItems,
-    noDupes;
+  let nineItems;
 
   beforeEach(() => {
     nineItems = new LinkedList();

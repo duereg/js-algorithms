@@ -1,15 +1,23 @@
 const towerOfHanoi = require('../../../lib/algorithms/3-stacks/hanoi');
-const stack = require('../../../lib/dataStructures/stack');
+const Stack = require('../../../lib/dataStructures/stack');
 
 describe('When dealing with the Tower of Hanoi', () => {
   let target,
     helper,
     source;
 
+  function test(number) {
+    for (let i = number; i > 0; i--) {
+      source.push(i);
+    }
+
+    towerOfHanoi(source, helper, target);
+  }
+
   beforeEach(() => {
-    target = new stack();
-    helper = new stack();
-    source = new stack();
+    target = new Stack();
+    helper = new Stack();
+    source = new Stack();
   });
 
   it('null is less than 1', () => {
@@ -67,12 +75,4 @@ describe('When dealing with the Tower of Hanoi', () => {
       expect(target.length).toBe(3);
     });
   });
-
-  function test(number) {
-    for (let i = number; i > 0; i--) {
-      source.push(i);
-    }
-
-    towerOfHanoi(source, helper, target);
-  }
 });

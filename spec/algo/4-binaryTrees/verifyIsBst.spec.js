@@ -3,8 +3,7 @@ const bst = require('../../../lib/dataStructures/binarySearchTree');
 
 describe('Given a binary tree, determine if the tree is a binary search tree', () => {
   it('a BST will verify correctly', () => {
-    let balanced;
-    balanced = new bst();
+    const balanced = new bst();
     balanced.add(10);
     balanced.add(5);
     balanced.add(15);

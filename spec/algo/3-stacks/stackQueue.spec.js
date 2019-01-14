@@ -1,5 +1,4 @@
-const stackQueue = require('../../../lib/algorithms/3-stacks/stackQueue');
-const stack = require('../../../lib/dataStructures/stack');
+const StackQueue = require('../../../lib/algorithms/3-stacks/stackQueue');
 
 describe('When dealing with a Queue comprised of two stacks', () => {
   let queue;
@@ -7,7 +6,7 @@ describe('When dealing with a Queue comprised of two stacks', () => {
   const testItem2 = 2;
 
   beforeEach(() => {
-    queue = new stackQueue();
+    queue = new StackQueue();
   });
 
   it('pushing to the Queue increases the length by 1', () => {

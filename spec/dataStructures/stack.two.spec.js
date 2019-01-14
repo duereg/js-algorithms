@@ -1,4 +1,4 @@
-const stack = require('../../lib/dataStructures/stack');
+const Stack = require('../../lib/dataStructures/stack');
 
 const testValue1 = 'test_string1';
 const testValue2 = 'test_string2';
@@ -7,7 +7,7 @@ describe('When pushing two elements to a stack', () => {
   let myStack;
 
   beforeEach(() => {
-    myStack = new stack();
+    myStack = new Stack();
     myStack.push(testValue1);
     myStack.push(testValue2);
   });

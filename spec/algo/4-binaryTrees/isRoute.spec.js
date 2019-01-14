@@ -7,7 +7,8 @@ describe('When testing a directed graph, determine if there is a route', () => {
     c,
     d,
     e,
-    f;
+    f,
+    g;
 
   beforeEach(() => {
     graph = { children: [] };

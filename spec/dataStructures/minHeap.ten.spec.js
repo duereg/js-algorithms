@@ -1,11 +1,11 @@
-const minHeap = require('../../lib/dataStructures/minHeap');
-const heapValidator = require('./binaryHeap.Validator');
+const MinHeap = require('../../lib/dataStructures/minHeap');
+const HeapValidator = require('./binaryHeap.Validator');
 
 describe('When adding ten elements to the min heap', () => {
   let list;
 
   beforeEach(() => {
-    list = new minHeap();
+    list = new MinHeap();
     list.add(20);
     list.add(10);
     list.add(100);
@@ -36,7 +36,7 @@ describe('When adding ten elements to the min heap', () => {
   });
 
   it('the min heap is valid', () => {
-    const validator = new heapValidator(list);
+    const validator = new HeapValidator(list);
     expect(validator.isValid()).toBe(true);
   });
 
