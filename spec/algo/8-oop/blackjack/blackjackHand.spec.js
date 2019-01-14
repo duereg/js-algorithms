@@ -18,8 +18,8 @@ describe('When test the concrete class black jack hand ', () => {
 
   it('the blackjackHand shoul have a value and not busted and is not 21', () => {
     hand
-        .addCard(new BlackjackCard().setSuit('Spades').setValue('Ace'))
-        .addCard(new BlackjackCard().setSuit('Hearts').setValue('Two'));
+      .addCard(new BlackjackCard().setSuit('Spades').setValue('Ace'))
+      .addCard(new BlackjackCard().setSuit('Hearts').setValue('Two'));
     expect(hand.getHandValue()).toEqual(13);
     expect(hand.isBusted()).toEqual(false);
     expect(hand.is21()).toEqual(false);
@@ -27,17 +27,17 @@ describe('When test the concrete class black jack hand ', () => {
 
   it('the blackjackHand  is busted', () => {
     hand
-        .addCard(new BlackjackCard().setSuit('Spades').setValue('Ace'))
-        .addCard(new BlackjackCard().setSuit('Hearts').setValue('Two'))
-        .addCard(new BlackjackCard().setSuit('Hearts').setValue('Nine'));
+      .addCard(new BlackjackCard().setSuit('Spades').setValue('Ace'))
+      .addCard(new BlackjackCard().setSuit('Hearts').setValue('Two'))
+      .addCard(new BlackjackCard().setSuit('Hearts').setValue('Nine'));
     hand.getHandValue();
     expect(hand.isBusted()).toEqual(true);
   });
 
   it('the blackjackHand is 21', () => {
     hand
-        .addCard(new BlackjackCard().setSuit('Spades').setValue('Ace'))
-        .addCard(new BlackjackCard().setSuit('Hearts').setValue('Jack'));
+      .addCard(new BlackjackCard().setSuit('Spades').setValue('Ace'))
+      .addCard(new BlackjackCard().setSuit('Hearts').setValue('Jack'));
     hand.getHandValue();
     expect(hand.isBusted()).toEqual(false);
     expect(hand.is21()).toEqual(true);

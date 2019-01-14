@@ -1,7 +1,6 @@
 {
   "root": true,
   "extends": "airbnb",
-  "installedESLint": true,
   "rules": {
     "no-plusplus": 0,
     "no-mixed-operators": 0

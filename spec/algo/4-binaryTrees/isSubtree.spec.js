@@ -37,9 +37,9 @@ describe('Given two binary trees, determine if one tree is a subtree of the othe
       .add(8)
       .add(1);
     unSubTree4 = new BinarySearchTree()
-    .add(10)
-    .add(5)
-    .add(15);
+      .add(10)
+      .add(5)
+      .add(15);
   });
 
   it('a subtree for the left branch will verify', () => {

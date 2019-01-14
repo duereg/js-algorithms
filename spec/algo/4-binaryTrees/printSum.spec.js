@@ -29,7 +29,7 @@ function print(value) {
   if (typeof value === 'object') {
     let total = 0;
     for (let i = 0, len = value.length; i < len; i++) {
-      total = total + value[i];
+      total += value[i];
     }
     expect(total).toEqual(sum);
   } else {

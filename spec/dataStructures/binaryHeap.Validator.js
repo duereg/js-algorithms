@@ -24,7 +24,6 @@ class Validate {
     }
     return true;
   }
-
 }
 
 module.exports = Validate;

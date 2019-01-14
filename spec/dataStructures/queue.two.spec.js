@@ -9,8 +9,8 @@ describe('When adding two elements to a Queue', () => {
   beforeEach(() => {
     myQueue = new Queue();
     myQueue
-    .push(testValue1)
-    .push(testValue2);
+      .push(testValue1)
+      .push(testValue2);
   });
 
   it('the Queue`s length should be 2', () => {

@@ -19,8 +19,8 @@ describe('When test the abstract class hand ', () => {
 
   it('Do chainining with addCard', () => {
     hand
-       .addCard(new Card().setSuit('Spades').setValue('Ace'))
-       .addCard(new Card().setSuit('Spades').setValue('Two'));
+      .addCard(new Card().setSuit('Spades').setValue('Ace'))
+      .addCard(new Card().setSuit('Spades').setValue('Two'));
     expect(hand.numCards()).toBe(2);
   });
 });

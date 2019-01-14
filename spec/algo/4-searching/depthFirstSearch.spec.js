@@ -17,13 +17,13 @@ describe('Given a binary tree containing the value 8, determine if the depth fir
 
   it('can find the value 8 in the tree', () => {
     expect(depthFirstSearch(balanced.head, value =>
-       value === 8
+      value === 8,
     )).toBe(true);
   });
 
   it('cannot find the value 11', () => {
     expect(depthFirstSearch(balanced.head, value =>
-       value === 11
+      value === 11,
     )).toBe(false);
   });
 
