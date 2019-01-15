@@ -10,7 +10,8 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.12.3",
-    "jasmine-node": "~2.0.0"
+    "jasmine-node": "~2.0.0",
+    "lodash": "^4.17.11"
   },
   "author": {
     "name": "Matt Blair",
@@ -18,7 +19,7 @@
     "url": "http://blog.mattblair.co"
   },
   "engines": {
-    "node": ">=4",
+    "node": ">=8",
     "npm": ">=5"
   },
   "maintainers": [

@@ -1,4 +1,4 @@
-const maxHeap = require('../../lib/dataStructures/maxHeap');
+const MaxHeap = require('../../lib/dataStructures/maxHeap');
 
 const testValue = 'test_string';
 
@@ -6,7 +6,7 @@ describe('When adding one element to the max heap', () => {
   let list;
 
   beforeEach(() => {
-    list = new maxHeap();
+    list = new MaxHeap();
     list.add(testValue);
   });
 

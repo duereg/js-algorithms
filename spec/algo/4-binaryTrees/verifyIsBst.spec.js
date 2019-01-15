@@ -1,10 +1,9 @@
-const verifyIsBst = require('../../../lib/algorithms/4-binaryTrees/verifyIsBst');
-const bst = require('../../../lib/dataStructures/binarySearchTree');
+const verifyIsBinarySearchTree = require('../../../lib/algorithms/4-binaryTrees/verifyIsBst');
+const BinarySearchTree = require('../../../lib/dataStructures/binarySearchTree');
 
 describe('Given a binary tree, determine if the tree is a binary search tree', () => {
-  it('a BST will verify correctly', () => {
-    let balanced;
-    balanced = new bst();
+  it('a BinarySearchTree will verify correctly', () => {
+    const balanced = new BinarySearchTree();
     balanced.add(10);
     balanced.add(5);
     balanced.add(15);
@@ -12,11 +11,11 @@ describe('Given a binary tree, determine if the tree is a binary search tree', (
     balanced.add(2);
     balanced.add(12);
     balanced.add(16);
-    expect(verifyIsBst(balanced.head)).toBe(true);
+    expect(verifyIsBinarySearchTree(balanced.head)).toBe(true);
   });
 
-  it('a non-BST will not verify correctly', () => {
-    const unbalanced = new bst();
+  it('a non-BinarySearchTree will not verify correctly', () => {
+    const unbalanced = new BinarySearchTree();
     unbalanced.add(10);
     unbalanced.add(1);
     unbalanced.add(20);
@@ -27,6 +26,6 @@ describe('Given a binary tree, determine if the tree is a binary search tree', (
     unbalanced.add(12);
 
     unbalanced.head.left.data = 30;
-    expect(verifyIsBst(unbalanced.head)).toBe(false);
+    expect(verifyIsBinarySearchTree(unbalanced.head)).toBe(false);
   });
 });

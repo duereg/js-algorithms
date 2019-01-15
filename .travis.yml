@@ -1,6 +1,7 @@
 language: node_js
 node_js:
-  - "4"
+  - "8"
+  - "10"
 env:
   - CXX=g++-4.8
 addons:
@@ -9,11 +10,3 @@ addons:
       - ubuntu-toolchain-r-test
     packages:
       - g++-4.8
-deploy:
-  provider: npm
-  email: matt@mattblair.co
-  api_key:
-    secure: TtDnXdOfM1AvCB/it0nD5tL5gYdGyO0WFLcSisTmH3gZRgKKs0nBXBiL+rX3nr1uw0Ul4SKYjFAFYgKhekYXonIHOkpPCr8xeVyLg43tgkaJc4aAvoZmOQFZs9I4wzAjnyoNmXTGN6uH6rVbEZWvG3xzrBV2J2vfSjzMOrGhxY8=
-  on:
-    tags: true
-    repo: duereg/js-algorithms

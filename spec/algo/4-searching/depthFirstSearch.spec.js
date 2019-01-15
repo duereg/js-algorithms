@@ -1,11 +1,12 @@
+/* eslint */
 const depthFirstSearch = require('../../../lib/algorithms/4-searching/depthFirstSearch');
-const bst = require('../../../lib/dataStructures/binarySearchTree');
+const BinarySearchTree = require('../../../lib/dataStructures/binarySearchTree');
 
 describe('Given a binary tree containing the value 8, determine if the depth first search', () => {
   let balanced;
 
   beforeEach(() => {
-    balanced = new bst();
+    balanced = new BinarySearchTree();
     balanced.add(10);
     balanced.add(5);
     balanced.add(15);
@@ -16,15 +17,11 @@ describe('Given a binary tree containing the value 8, determine if the depth fir
   });
 
   it('can find the value 8 in the tree', () => {
-    expect(depthFirstSearch(balanced.head, value =>
-      value === 8,
-    )).toBe(true);
+    expect(depthFirstSearch(balanced.head, value => value === 8)).toBe(true);
   });
 
   it('cannot find the value 11', () => {
-    expect(depthFirstSearch(balanced.head, value =>
-      value === 11,
-    )).toBe(false);
+    expect(depthFirstSearch(balanced.head, value => value === 11)).toBe(false);
   });
 
   it('the order of search is correct', () => {

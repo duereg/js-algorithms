@@ -1,10 +1,10 @@
-const minHeap = require('../../lib/dataStructures/minHeap');
+const MinHeap = require('../../lib/dataStructures/minHeap');
 
 describe('When adding two elements to the min heap', () => {
   let list;
 
   beforeEach(() => {
-    list = new minHeap();
+    list = new MinHeap();
     list.add(20);
     list.add(10);
   });
