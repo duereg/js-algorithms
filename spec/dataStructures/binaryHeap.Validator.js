@@ -1,3 +1,5 @@
+const { getLeftChild, getRightChild } = require('../../lib/dataStructures/binaryHeap');
+
 class Validate {
   constructor(heap = null) {
     if (!heap) throw new Error('Cannot validate heap.');
@@ -6,8 +8,9 @@ class Validate {
 
   isValid(parent = 0, length = this.heap.array.length) {
     if (parent < length) {
-      const left = this.heap.getLeftChild(parent);
-      const right = this.heap.getRightChild(parent);
+      const left = getLeftChild(parent);
+      const right = getRightChild(parent);
+
       if (left < length) {
         if (this.heap.shouldSwap(this.heap.array[left], this.heap.array[parent])) {
           return false;

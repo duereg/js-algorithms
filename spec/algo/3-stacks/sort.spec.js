@@ -1,11 +1,11 @@
 const sort = require('../../../lib/algorithms/3-stacks/sort');
-const stack = require('../../../lib/dataStructures/stack');
+const Stack = require('../../../lib/dataStructures/stack');
 
 describe('When sorting a stack, using only stacks', () => {
   let unsorted;
 
   beforeEach(() => {
-    unsorted = new stack();
+    unsorted = new Stack();
   });
 
   it('a stack of 1 element can be sorted.', () => {

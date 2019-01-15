@@ -41,14 +41,14 @@ describe('When testing a directed graph, determine if there is a route', () => {
   });
 
   it('A route can be found from a to f', () => {
-    expect(isRoute(graph, a, f)).toBe(true);
+    expect(isRoute(a, f)).toBe(true);
   });
 
   it('A route can be found from g to f', () => {
-    expect(isRoute(graph, g, f)).toBe(true);
+    expect(isRoute(g, f)).toBe(true);
   });
 
   it('No route exists between a and g', () => {
-    expect(isRoute(graph, a, g)).toBe(false);
+    expect(isRoute(a, g)).toBe(false);
   });
 });

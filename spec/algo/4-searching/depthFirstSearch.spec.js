@@ -1,12 +1,12 @@
 /* eslint */
 const depthFirstSearch = require('../../../lib/algorithms/4-searching/depthFirstSearch');
-const bst = require('../../../lib/dataStructures/binarySearchTree');
+const BinarySearchTree = require('../../../lib/dataStructures/binarySearchTree');
 
 describe('Given a binary tree containing the value 8, determine if the depth first search', () => {
   let balanced;
 
   beforeEach(() => {
-    balanced = new bst();
+    balanced = new BinarySearchTree();
     balanced.add(10);
     balanced.add(5);
     balanced.add(15);
