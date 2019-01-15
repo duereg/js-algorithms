@@ -1,7 +1,7 @@
 {
   "name": "js-algorithms",
   "description": "Javascript versions of classic software development algorithms",
-  "version": "1.4.3",
+  "version": "1.5.0",
   "main": "index.js",
   "repository": "git@github.com:duereg/js-algorithms.git",
   "devDependencies": {
