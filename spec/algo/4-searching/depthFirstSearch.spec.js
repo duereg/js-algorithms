@@ -1,4 +1,6 @@
 /* eslint */
+const sinon = require("sinon");
+
 const depthFirstSearch = require('../../../lib/algorithms/4-searching/depthFirstSearch');
 const BinarySearchTree = require('../../../lib/dataStructures/binarySearchTree');
 
@@ -24,22 +26,33 @@ describe('Given a binary tree containing the value 8, determine if the depth fir
     expect(depthFirstSearch(balanced.head, value => value === 11)).toBe(false);
   });
 
-  it('the order of search is correct', () => {
-    const matcher = {
+  describe('the order of search is correct', () => {
+    const sandbox = sinon.createSandbox();
 
+    const matcher = {
       matcher(value) {
         return value === 8;
       },
     };
-    spyOn(matcher, 'matcher').and.callThrough();
 
-    expect(depthFirstSearch(balanced.head, matcher.matcher)).toBe(true);
-    expect(matcher.matcher).toHaveBeenCalledWith(10);
-    expect(matcher.matcher).toHaveBeenCalledWith(5);
-    expect(matcher.matcher).toHaveBeenCalledWith(15);
-    expect(matcher.matcher).toHaveBeenCalledWith(12);
-    expect(matcher.matcher).toHaveBeenCalledWith(16);
-    expect(matcher.matcher).toHaveBeenCalledWith(2);
-    expect(matcher.matcher).toHaveBeenCalledWith(8);
+    beforeEach(()=> {
+      sandbox.spy(matcher, "matcher");
+    });
+
+    afterEach(() => {
+      sandbox.restore();
+    });
+
+    it('is correct', () => {
+      expect(depthFirstSearch(balanced.head, matcher.matcher)).toBe(true);
+      expect(matcher.matcher.calledWith(10)).toBe(true);
+      expect(matcher.matcher.calledWith(5)).toBe(true);
+      expect(matcher.matcher.calledWith(15)).toBe(true);
+      expect(matcher.matcher.calledWith(12)).toBe(true);
+      expect(matcher.matcher.calledWith(16)).toBe(true);
+      expect(matcher.matcher.calledWith(2)).toBe(true);
+      expect(matcher.matcher.calledWith(8)).toBe(true);
+    });
+
   });
 });
