@@ -1,8 +1,8 @@
 const Trie = require('../../lib/dataStructures/trie');
 
-const testValue1 = "apple";
-const testValue2 = "banana";
-const testValue3 = "cherry";
+const testValue1 = 'apple';
+const testValue2 = 'banana';
+const testValue3 = 'cherry';
 
 describe('Given a trie', () => {
   let tree;
@@ -33,7 +33,6 @@ describe('Given a trie', () => {
       it(`the hasWord() method should be able to find ${testValue1}`, () => {
         expect(tree.hasWord(testValue1)).toBe(true);
       });
-
     });
   });
 });

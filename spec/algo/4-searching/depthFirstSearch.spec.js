@@ -1,5 +1,5 @@
 /* eslint */
-const sinon = require("sinon");
+const sinon = require('sinon');
 
 const depthFirstSearch = require('../../../lib/algorithms/4-searching/depthFirstSearch');
 const BinarySearchTree = require('../../../lib/dataStructures/binarySearchTree');
@@ -35,8 +35,8 @@ describe('Given a binary tree containing the value 8, determine if the depth fir
       },
     };
 
-    beforeEach(()=> {
-      sandbox.spy(matcher, "matcher");
+    beforeEach(() => {
+      sandbox.spy(matcher, 'matcher');
     });
 
     afterEach(() => {
@@ -53,6 +53,5 @@ describe('Given a binary tree containing the value 8, determine if the depth fir
       expect(matcher.matcher.calledWith(2)).toBe(true);
       expect(matcher.matcher.calledWith(8)).toBe(true);
     });
-
   });
 });
