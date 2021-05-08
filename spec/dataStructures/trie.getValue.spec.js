@@ -35,4 +35,33 @@ describe('Given a trie', () => {
       });
     });
   });
+
+  describe(`containing the word "${testValue3}"`, () => {
+    beforeEach(() => {
+      tree = new Trie();
+      tree.add(testValue3);
+    });
+
+    it(`getValue() returns "${testValue3}"`, () => {
+      expect(tree.getValue(testValue3)).toBe(testValue3);
+    });
+
+    it(`the hasWord() method should be able to find ${testValue3}`, () => {
+      expect(tree.hasWord(testValue3)).toBe(true);
+    });
+
+    describe(`if add() is called again for "${testValue3}", with the value "${testValue1}"`, () => {
+      beforeEach(() => {
+        tree.add(testValue3, testValue1);
+      });
+
+      it(`getValue() returns "${testValue1}"`, () => {
+        expect(tree.getValue(testValue3)).toBe(testValue1);
+      });
+
+      it(`the hasWord() method should be able to find ${testValue3}`, () => {
+        expect(tree.hasWord(testValue3)).toBe(true);
+      });
+    });
+  });
 });
