@@ -34,5 +34,28 @@
     "pretest": "npm install",
     "test": "node_modules/.bin/jasmine",
     "lint": "eslint ./ --fix"
-  }
+  },
+  "keywords": [
+    "algorithms",
+    "dataStructures",
+    "binaryHeap",
+    "binarySearchTree",
+    "bst",
+    "linkedList",
+    "maxHeap",
+    "minHeap",
+    "queue",
+    "stack",
+    "stackQueue",
+    "trie",
+    "permutation",
+    "shuffle",
+    "Fisher-Yates",
+    "palindrome",
+    "sort",
+    "depthFirstSearch",
+    "mergeSort",
+    "quickSort",
+    "smallestEnclosingCircle"
+  ]
 }
