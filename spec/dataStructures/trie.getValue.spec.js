@@ -50,6 +50,10 @@ describe('Given a trie', () => {
       expect(tree.hasWord(testValue3)).toBe(true);
     });
 
+    it(`hasWord() returns false if ${testValue3}Pie is given`, () => {
+      expect(tree.hasWord(`${testValue3}Pie`)).toBe(false);
+    });
+
     describe(`if add() is called again for "${testValue3}", with the value "${testValue1}"`, () => {
       beforeEach(() => {
         tree.add(testValue3, testValue1);

@@ -81,23 +81,49 @@ describe('Given a trie containing the words "free", "freed", "freedom", and "fre
     tree = null;
   });
 
+  describe(`after deleting ${testValue2}`, () => {
+    beforeEach(() => {
+      tree.remove(testValue2);
+    });
 
-  it(`after deleting ${testValue2}, ${testValue1} & ${testValue5} should still exist`, () => {
-    tree.remove(testValue2);
-    expect(tree.hasWord(testValue1)).toBe(true);
-    expect(tree.hasWord(testValue2)).toBe(false);
-    expect(tree.hasWord(testValue3)).toBe(true);
-    expect(tree.hasWord(testValue5)).toBe(true);
+    it(`${testValue1} still exists`, () => {
+      expect(tree.hasWord(testValue1)).toBe(true);
+    });
+
+    it(`${testValue3} still exists`, () => {
+      expect(tree.hasWord(testValue3)).toBe(true);
+    });
+
+    it(`${testValue5} still exists`, () => {
+      expect(tree.hasWord(testValue5)).toBe(true);
+    });
+
+    it(`${testValue2} does not exist`, () => {
+      expect(tree.hasWord(testValue2)).toBe(false);
+    });
   });
 
+  describe(`after deleting ${testValue3} & ${testValue5}`, () =>{
+    beforeEach(() => {
+      tree.remove(testValue3);
+      tree.remove(testValue5);
+    });
 
-  it(`after deleting ${testValue3} & ${testValue5}, ${testValue1} & ${testValue2} should still exist`, () => {
-    tree.remove(testValue3);
-    tree.remove(testValue5);
-    expect(tree.hasWord(testValue1)).toBe(true);
-    expect(tree.hasWord(testValue2)).toBe(true);
-    expect(tree.hasWord(testValue3)).toBe(false);
-    expect(tree.hasWord(testValue5)).toBe(false);
+    it(`${testValue1} still exists`, () => {
+      expect(tree.hasWord(testValue1)).toBe(true);
+    });
+
+    it(`${testValue2} still exists`, () => {
+      expect(tree.hasWord(testValue2)).toBe(true);
+    });
+
+    it(`${testValue3} does not exist`, () => {
+      expect(tree.hasWord(testValue3)).toBe(false);
+    });
+
+    it(`${testValue5} does not exist`, () => {
+      expect(tree.hasWord(testValue5)).toBe(false);
+    });
   });
 });
 
