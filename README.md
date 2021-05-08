@@ -17,7 +17,7 @@ I've documented the process of creating this code [here](http://blog.mattblair.c
 | [Binary Heap](http://en.wikipedia.org/wiki/Binary_heap)                   | [code](https://github.com/duereg/js-algorithms/blob/master/lib/dataStructures/binaryHeap.js)                               |
 | [Binary Search Tree](http://en.wikipedia.org/wiki/Binary_search_tree)     | [code](https://github.com/duereg/js-algorithms/blob/master/lib/dataStructures/binarySearchTree.js)  |
 | [Depth First Search](http://en.wikipedia.org/wiki/Depth-first_search)    | [code](https://github.com/duereg/js-algorithms/blob/master/lib/algorithms/4-searching/depthFirstSearch.js) |
-| [Fisher–Yates shuffle](http://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) | code](https://github.com/duereg/js-algorithms/blob/master/lib/algorithms/1-strings/shuffle.js) |
+| [Fisher–Yates shuffle](http://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) | [code](https://github.com/duereg/js-algorithms/blob/master/lib/algorithms/1-strings/shuffle.js) |
 | [Max Heap](http://en.wikipedia.org/wiki/Binary_heap)                      | [code](https://github.com/duereg/js-algorithms/blob/master/lib/dataStructures/maxHeap.js) |
 | [Mergesort algorithm](https://en.wikipedia.org/wiki/Merge_sort)          | [code](https://github.com/duereg/js-algorithms/blob/master/lib/algorithms/11-sorting/mergeSort.js) |
 | [Min Heap](http://en.wikipedia.org/wiki/Binary_heap)                      | [code](https://github.com/duereg/js-algorithms/blob/master/lib/dataStructures/minHeap.js) |
@@ -29,7 +29,7 @@ I've documented the process of creating this code [here](http://blog.mattblair.c
 | [Basic string compression counting repeated characters](http://codereview.stackexchange.com/questions/65335/basic-string-compression-counting-repeated-characters) | [code](https://github.com/duereg/js-algorithms/blob/master/lib/algorithms/1-strings/compress.js) |
 | [Are two strings permutations of each other](http://stackoverflow.com/questions/2131997/checking-if-two-strings-are-permutations-of-each-other) | [code](https://github.com/duereg/js-algorithms/blob/master/lib/algorithms/1-strings/permutation.js) |
 | [Is a linked list a palindrome](http://www.geeksforgeeks.org/function-to-check-if-a-singly-linked-list-is-palindrome/) | [code](https://github.com/duereg/js-algorithms/blob/master/lib/algorithms/2-linkedLists/palindrome.js) |
-| [Smallest Enclosing Circle](https://www.nayuki.io/page/smallest-enclosing-circle) | code](https://github.com/duereg/js-algorithms/blob/master/lib/algorithms/4-searching/smallestEnclosingCircle.js)  |
+| [Smallest Enclosing Circle](https://www.nayuki.io/page/smallest-enclosing-circle) | [code](https://github.com/duereg/js-algorithms/blob/master/lib/algorithms/4-searching/smallestEnclosingCircle.js)  |
 
 # Description
 
