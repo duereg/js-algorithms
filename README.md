@@ -12,24 +12,24 @@ I've documented the process of creating this code [here](http://blog.mattblair.c
 
 # Problems
 
-| Algorithms                                                               | Solution                                                                                                                     |
+| Algorithm                                                               | Solution                                                                                                                     |
 |--------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| [Binary Heap](http://en.wikipedia.org/wiki/Binary_heap)                   | [click](https://github.com/duereg/js-algorithms/blob/master/lib/dataStructures/binaryHeap.js)                               |
-| [Binary Search Tree](http://en.wikipedia.org/wiki/Binary_search_tree)     | [click](https://github.com/duereg/js-algorithms/blob/master/lib/dataStructures/binarySearchTree.js)  |
-| [Depth First Search](http://en.wikipedia.org/wiki/Depth-first_search)    | [click](https://github.com/duereg/js-algorithms/blob/master/lib/algorithms/4-searching/depthFirstSearch.js) |
-| [Fisher–Yates shuffle](http://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) | [click](https://github.com/duereg/js-algorithms/blob/master/lib/algorithms/1-strings/shuffle.js) |
-| [Max Heap](http://en.wikipedia.org/wiki/Binary_heap)                      | [click](https://github.com/duereg/js-algorithms/blob/master/lib/dataStructures/maxHeap.js) |
-| [Mergesort algorithm](https://en.wikipedia.org/wiki/Merge_sort)          | [click](https://github.com/duereg/js-algorithms/blob/master/lib/algorithms/11-sorting/mergeSort.js) |
-| [Min Heap](http://en.wikipedia.org/wiki/Binary_heap)                      | [click](https://github.com/duereg/js-algorithms/blob/master/lib/dataStructures/minHeap.js) |
-| [Queue](http://en.wikipedia.org/wiki/Queue_%28abstract_data_type%29)      | [click](https://github.com/duereg/js-algorithms/blob/master/lib/dataStructures/queue.js)  |
-| [Quicksort algorithm](http://en.wikipedia.org/wiki/Quicksort)            | [click](https://github.com/duereg/js-algorithms/blob/master/lib/algorithms/11-sorting/quickSort.js) |
-| [Stack](http://en.wikipedia.org/wiki/Stack_%28abstract_data_type%29)      | [click](https://github.com/duereg/js-algorithms/blob/master/lib/dataStructures/stack.js)  |
-| [Tower of Hanoi](http://en.wikipedia.org/wiki/Tower_of_Hanoi)            | [click](https://github.com/duereg/js-algorithms/blob/master/lib/algorithms/3-stacks/hanoi.js) |
-| [Trie](http://en.wikipedia.org/wiki/Trie)                                 | [click](https://github.com/duereg/js-algorithms/blob/master/lib/dataStructures/trie.js)  |
-| [Basic string compression counting repeated characters](http://codereview.stackexchange.com/questions/65335/basic-string-compression-counting-repeated-characters) | [click](https://github.com/duereg/js-algorithms/blob/master/lib/algorithms/1-strings/compress.js) |
-| [Are two strings permutations of each other](http://stackoverflow.com/questions/2131997/checking-if-two-strings-are-permutations-of-each-other) | [click](https://github.com/duereg/js-algorithms/blob/master/lib/algorithms/1-strings/permutation.js) |
-| [Is a linked list a palindrome](http://www.geeksforgeeks.org/function-to-check-if-a-singly-linked-list-is-palindrome/) | [click](https://github.com/duereg/js-algorithms/blob/master/lib/algorithms/2-linkedLists/palindrome.js) |
-| [Smallest Enclosing Circle](https://www.nayuki.io/page/smallest-enclosing-circle) | [click](https://github.com/duereg/js-algorithms/blob/master/lib/algorithms/4-searching/smallestEnclosingCircle.js)  |
+| [Binary Heap](http://en.wikipedia.org/wiki/Binary_heap)                   | [code](https://github.com/duereg/js-algorithms/blob/master/lib/dataStructures/binaryHeap.js)                               |
+| [Binary Search Tree](http://en.wikipedia.org/wiki/Binary_search_tree)     | [code](https://github.com/duereg/js-algorithms/blob/master/lib/dataStructures/binarySearchTree.js)  |
+| [Depth First Search](http://en.wikipedia.org/wiki/Depth-first_search)    | [code](https://github.com/duereg/js-algorithms/blob/master/lib/algorithms/4-searching/depthFirstSearch.js) |
+| [Fisher–Yates shuffle](http://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) | code](https://github.com/duereg/js-algorithms/blob/master/lib/algorithms/1-strings/shuffle.js) |
+| [Max Heap](http://en.wikipedia.org/wiki/Binary_heap)                      | [code](https://github.com/duereg/js-algorithms/blob/master/lib/dataStructures/maxHeap.js) |
+| [Mergesort algorithm](https://en.wikipedia.org/wiki/Merge_sort)          | [code](https://github.com/duereg/js-algorithms/blob/master/lib/algorithms/11-sorting/mergeSort.js) |
+| [Min Heap](http://en.wikipedia.org/wiki/Binary_heap)                      | [code](https://github.com/duereg/js-algorithms/blob/master/lib/dataStructures/minHeap.js) |
+| [Queue](http://en.wikipedia.org/wiki/Queue_%28abstract_data_type%29)      | [code](https://github.com/duereg/js-algorithms/blob/master/lib/dataStructures/queue.js)  |
+| [Quicksort algorithm](http://en.wikipedia.org/wiki/Quicksort)            | [code](https://github.com/duereg/js-algorithms/blob/master/lib/algorithms/11-sorting/quickSort.js) |
+| [Stack](http://en.wikipedia.org/wiki/Stack_%28abstract_data_type%29)      | [code](https://github.com/duereg/js-algorithms/blob/master/lib/dataStructures/stack.js)  |
+| [Tower of Hanoi](http://en.wikipedia.org/wiki/Tower_of_Hanoi)            | [code](https://github.com/duereg/js-algorithms/blob/master/lib/algorithms/3-stacks/hanoi.js) |
+| [Trie](http://en.wikipedia.org/wiki/Trie)                                 | [code](https://github.com/duereg/js-algorithms/blob/master/lib/dataStructures/trie.js)  |
+| [Basic string compression counting repeated characters](http://codereview.stackexchange.com/questions/65335/basic-string-compression-counting-repeated-characters) | [code](https://github.com/duereg/js-algorithms/blob/master/lib/algorithms/1-strings/compress.js) |
+| [Are two strings permutations of each other](http://stackoverflow.com/questions/2131997/checking-if-two-strings-are-permutations-of-each-other) | [code](https://github.com/duereg/js-algorithms/blob/master/lib/algorithms/1-strings/permutation.js) |
+| [Is a linked list a palindrome](http://www.geeksforgeeks.org/function-to-check-if-a-singly-linked-list-is-palindrome/) | [code](https://github.com/duereg/js-algorithms/blob/master/lib/algorithms/2-linkedLists/palindrome.js) |
+| [Smallest Enclosing Circle](https://www.nayuki.io/page/smallest-enclosing-circle) | code](https://github.com/duereg/js-algorithms/blob/master/lib/algorithms/4-searching/smallestEnclosingCircle.js)  |
 
 # Description
 
@@ -58,7 +58,7 @@ As well as the following algorithms:
 If you want access to these data structures in your project, include this package.
 
 ```shell
-> var algorithms: = require('js-algorithms')
+> const algorithms: = require('js-algorithms')
 > algorithms
 {
   dataStructures: {
@@ -80,5 +80,3 @@ If you want access to these data structures in your project, include this packag
     enclosingCircle: [Function]
   }}
 ```
-
-
