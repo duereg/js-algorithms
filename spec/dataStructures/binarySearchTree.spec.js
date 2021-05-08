@@ -14,7 +14,6 @@ describe('When adding an element to a binary search tree', () => {
   });
 });
 
-
 describe('When adding three elements to a binary search tree', () => {
   let tree;
   const value2 = 2;

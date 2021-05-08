@@ -5,8 +5,8 @@
   "main": "index.js",
   "repository": "git@github.com:duereg/js-algorithms.git",
   "devDependencies": {
-    "eslint": "^5.12.0",
-    "eslint-config-airbnb": "^17.1.0",
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.12.3",

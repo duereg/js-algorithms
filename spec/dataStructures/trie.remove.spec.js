@@ -103,7 +103,7 @@ describe('Given a trie containing the words "free", "freed", "freedom", and "fre
     });
   });
 
-  describe(`after deleting ${testValue3} & ${testValue5}`, () =>{
+  describe(`after deleting ${testValue3} & ${testValue5}`, () => {
     beforeEach(() => {
       tree.remove(testValue3);
       tree.remove(testValue5);
