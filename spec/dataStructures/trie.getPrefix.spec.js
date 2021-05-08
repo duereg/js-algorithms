@@ -1,24 +1,44 @@
 const Trie = require('../../lib/dataStructures/trie');
 
-const testValue1 = 'apple';
-const testValue2 = 'banana';
-const testValue3 = 'cherry';
+const cher = 'cher';
+const cherry = 'cherry';
+const cherryPie = 'cherryPie';
 
 describe('Given a trie', () => {
   let tree;
 
-  describe(`containing the word "${testValue3}"`, () => {
+  describe(`containing the word "${cherry}"`, () => {
     beforeEach(() => {
       tree = new Trie();
-      tree.add(testValue3);
+      tree.add(cherry);
     });
 
-    it(`getPrefix() returns "${testValue3}" for ${testValue3}Pie`, () => {
-      expect(tree.getPrefix(`${testValue3}Pie`)).toBe(testValue3);
+    it(`getPrefix() returns "${cherry}" for ${cherryPie}`, () => {
+      expect(tree.getPrefix(cherryPie)).toBe(cherry);
     });
 
-    it(`getPrefix() returns "${testValue3}" for ${testValue3}`, () => {
-      expect(tree.getPrefix(testValue3)).toBe(testValue3);
+    it(`getPrefix() returns "${cherry}" for ${cherry}`, () => {
+      expect(tree.getPrefix(cherry)).toBe(cherry);
+    });
+
+    describe(`adding "${cher}"`, () => {
+      beforeEach(() => {
+        tree.add(cher);
+      });
+
+      it(`getPrefix() returns "${cherry}" for ${cherryPie}`, () => {
+        expect(tree.getPrefix(cherryPie)).toBe(cherry);
+      });
+
+      describe(`removing "${cherry}"`, () => {
+        beforeEach(() => {
+          tree.remove(cherry);
+        });
+
+        it(`getPrefix() returns "${cher}" for ${cherryPie}`, () => {
+          expect(tree.getPrefix(cherryPie)).toBe(cher);
+        });
+      });
     });
   });
 });
