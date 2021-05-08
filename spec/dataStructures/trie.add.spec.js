@@ -141,13 +141,23 @@ describe('Given a trie', () => {
     });
   });
 
-  describe('where you add undefined', () => {
+  describe('where you add(undefined)', () => {
     beforeEach(() => {
       tree = new Trie();
     });
 
     it('the add() method will throw an exception', () => {
       expect(tree.add).toThrow();
+    });
+  });
+
+  describe('where you add a valid word, but an undefined or null value', () => {
+    beforeEach(() => {
+      tree = new Trie();
+    });
+
+    it('the add() method will throw an exception', () => {
+      expect(() => tree.add('foo', null)).toThrow();
     });
   });
 });
