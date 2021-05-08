@@ -4,6 +4,8 @@
     "xdescribe": true,
     "it": true,
     "expect": true,
+    "beforeAll": true,
+    "afterAll": true,
     "before": true,
     "after": true,
     "beforeEach": true,
