@@ -31,6 +31,7 @@ I've documented the process of creating this code [here](http://blog.mattblair.c
 | [Are two strings permutations of each other](http://stackoverflow.com/questions/2131997/checking-if-two-strings-are-permutations-of-each-other) | [code](https://github.com/duereg/js-algorithms/blob/master/lib/algorithms/1-strings/permutation.js) |
 | [Is a linked list a palindrome](http://www.geeksforgeeks.org/function-to-check-if-a-singly-linked-list-is-palindrome/) | [code](https://github.com/duereg/js-algorithms/blob/master/lib/algorithms/2-linkedLists/palindrome.js) |
 | [Smallest Enclosing Circle](https://www.nayuki.io/page/smallest-enclosing-circle) | [code](https://github.com/duereg/js-algorithms/blob/master/lib/algorithms/4-searching/smallestEnclosingCircle.js)  |
+| [Binary search algorithm with example program](https://www.scaler.com/topics/data-structures/binary-search-algorithm/) | [code](https://github.com/duereg/js-algorithms/blob/master/lib/algorithms/4-searching/smallestEnclosingCircle.js)  |
 
 # Description
 
