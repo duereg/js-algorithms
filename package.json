@@ -20,8 +20,8 @@
     "url": "http://blog.mattblair.co"
   },
   "engines": {
-    "node": ">=8",
-    "npm": ">=5"
+    "node": ">=16",
+    "npm": ">=8"
   },
   "maintainers": [
     {
