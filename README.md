@@ -80,3 +80,152 @@ If you want access to these data structures in your project, include this packag
     enclosingCircle: [Function]
   }}
 ```
+
+# New Utility Algorithms (JavaScript)
+
+This section details newer, niche utility algorithms added to the library.
+
+## Aho-Corasick with Fuzzy Matching
+
+Efficiently searches for multiple keywords in a text, with optional fuzzy matching to allow for a specified number of edits (insertions, deletions, substitutions) based on Levenshtein distance.
+
+*   **File Location:** `lib/algorithms/1-strings/ahoCorasickFuzzy.js`
+*   **Key Options:**
+    *   `defaultMaxDistance` (constructor): Default Levenshtein distance for fuzzy matching (default: 0).
+    *   `maxDistanceOverride` (search method): Override default distance for a specific search.
+*   **Usage Example:**
+    ```javascript
+    const AhoCorasickFuzzy = require('./lib/algorithms/1-strings/ahoCorasickFuzzy');
+
+    const keywords = ["apple", "apply", "apricot"];
+    const acf = new AhoCorasickFuzzy(keywords, { defaultMaxDistance: 1 });
+
+    // Exact match
+    console.log(acf.search("An apple a day.", 0));
+    // Expected: [{ keyword: "apple", found: "apple", startIndex: 3, endIndex: 8, distance: 0 }]
+
+    // Fuzzy match
+    console.log(acf.search("An apble a day.", 1));
+    // Expected: [{ keyword: "apple", found: "apble", startIndex: 3, endIndex: 8, distance: 1 },
+    //            { keyword: "apply", found: "apble", startIndex: 3, endIndex: 8, distance: 1 }]
+    
+    console.log(acf.search("aply", 1)); // Fuzzy for "apply" (deletion of 'p') or "apple" (sub 'p' for 'l', del 'e')
+    // Example output:
+    // [
+    //   { keyword: 'apply', found: 'aply', startIndex: 0, endIndex: 4, distance: 1 },
+    //   { keyword: 'apple', found: 'aply', startIndex: 0, endIndex: 4, distance: 2 } // if maxDistance allows
+    // ]
+    ```
+
+## HyperLogLog++
+
+A probabilistic algorithm for estimating the cardinality (number of distinct elements) of very large datasets with high accuracy using minimal memory. Includes small and large range corrections.
+
+*   **File Location:** `lib/dataStructures/hyperloglog-plus-plus.js`
+*   **Key Options:**
+    *   `p` (constructor): Precision parameter (default: 14), `m = 2^p` registers. Range 4-16.
+*   **Usage Example:**
+    ```javascript
+    const HyperLogLogPlusPlus = require('./lib/dataStructures/hyperloglog-plus-plus');
+
+    const hll = new HyperLogLogPlusPlus({ p: 10 }); // m = 1024 registers
+
+    hll.add("user1");
+    hll.add("user2");
+    hll.add("user1"); // Duplicate
+    hll.add("user3");
+
+    console.log(`Estimated cardinality: ${hll.estimate()}`); // Expected: Close to 3
+
+    const hll2 = new HyperLogLogPlusPlus({ p: 10 });
+    hll2.add("user4");
+    hll2.add("user3"); // Common element
+
+    hll.merge(hll2);
+    console.log(`Merged estimated cardinality: ${hll.estimate()}`); // Expected: Close to 4
+    ```
+
+## Cuckoo Filter
+
+A probabilistic data structure for approximate set membership testing that supports additions and, importantly, deletions. Offers better space efficiency than Bloom filters in some cases.
+
+*   **File Location:** `lib/dataStructures/cuckoo-filter.js`
+*   **Key Options:**
+    *   `capacity` (constructor): Approximate number of items (default: 10000).
+    *   `fingerprintSize` (constructor): Bits per fingerprint (default: 8).
+    *   `entriesPerBucket` (constructor): Fingerprints per bucket (default: 4).
+    *   `maxKicks` (constructor): Max evictions on collision (default: 500).
+*   **Usage Example:**
+    ```javascript
+    const CuckooFilter = require('./lib/dataStructures/cuckoo-filter');
+
+    const filter = new CuckooFilter({ capacity: 100, fingerprintSize: 8, entriesPerBucket: 2 });
+
+    console.log("Add 'apple':", filter.add("apple"));       // true
+    console.log("Contains 'apple':", filter.contains("apple")); // true
+    console.log("Contains 'banana':", filter.contains("banana"));// false (probably)
+
+    console.log("Remove 'apple':", filter.remove("apple"));     // true
+    console.log("Contains 'apple':", filter.contains("apple")); // false (probably)
+    console.log(`Current item count: ${filter.count()}`);
+    ```
+
+## Distributed Fixed Window Rate Limiter
+
+Controls the number of requests allowed for a given key within fixed time windows (e.g., 100 requests per minute). Designed conceptually for distributed stores like Redis but includes an in-memory adapter.
+
+*   **File Location:** `lib/algorithms/networking/distributed-fixed-window-rate-limiter.js`
+*   **Key Options:**
+    *   `limit` (constructor): Max requests per window.
+    *   `windowMs` (constructor): Window duration in milliseconds.
+    *   `storeAdapter` (constructor): Optional. Defaults to `InMemoryStoreAdapter`. For distributed use, a Redis-backed adapter would be provided.
+*   **Usage Example:**
+    ```javascript
+    const { DistributedFixedWindowRateLimiter, InMemoryStoreAdapter } = require('./lib/algorithms/networking/distributed-fixed-window-rate-limiter');
+
+    // Using the default InMemoryStoreAdapter
+    const limiter = new DistributedFixedWindowRateLimiter({
+        limit: 5,       // 5 requests
+        windowMs: 2000  // per 2 seconds
+    });
+
+    async function test() {
+        for (let i = 1; i <= 7; i++) {
+            const result = await limiter.isAllowed("user123");
+            console.log(`Request ${i}: Allowed: ${result.allowed}, Remaining: ${result.remaining}`);
+        }
+        // After 2 seconds, the window resets.
+        setTimeout(async () => {
+            console.log("\\nAfter window reset:");
+            const result = await limiter.isAllowed("user123");
+            console.log(`Request (new window): Allowed: ${result.allowed}, Remaining: ${result.remaining}`);
+        }, 2100);
+    }
+    test();
+    ```
+
+## Concave Hull (k-Nearest Neighbors based)
+
+Calculates a non-convex boundary (concave hull) for a set of 2D points using a k-Nearest Neighbors approach. This can produce a tighter fit around points than a convex hull.
+
+*   **File Location:** `lib/algorithms/geospatial/concave-hull-knn.js`
+*   **Key Options:**
+    *   `k` (constructor): The number of nearest neighbors to consider for selecting the next hull point.
+*   **Usage Example:**
+    ```javascript
+    const ConcaveHullKNN = require('./lib/algorithms/geospatial/concave-hull-knn');
+
+    const points = [
+        { x: 0, y: 0 }, { x: 5, y: 0 }, { x: 5, y: 5 }, { x: 0, y: 5 }, // Outer square
+        { x: 1, y: 1 }, { x: 4, y: 1 }, { x: 1, y: 4 }, { x: 4, y: 4 }  // Inner points
+    ];
+    const k = 3; // A smaller k tends to produce more concavity
+
+    const concaveHullBuilder = new ConcaveHullKNN(points, k);
+    const hull = concaveHullBuilder.getHull();
+
+    console.log("Concave Hull Points:", JSON.stringify(hull));
+    // Expected output will be a list of points forming a CCW polygon,
+    // potentially including some inner points to create concavities.
+    // e.g., for a "U" shape, it would trace the "U".
+    ```
