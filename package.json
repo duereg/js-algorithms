@@ -20,7 +20,7 @@
     "url": "http://blog.mattblair.co"
   },
   "engines": {
-    "node": ">=16",
+    "node": ">=20",
     "npm": ">=8"
   },
   "maintainers": [

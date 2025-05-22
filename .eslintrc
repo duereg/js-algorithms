@@ -1,6 +1,9 @@
 {
   "root": true,
   "extends": "airbnb",
+  "parserOptions": {
+    "ecmaVersion": 2022
+  },
   "rules": {
     "no-plusplus": 0,
     "no-mixed-operators": 0
